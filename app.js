@@ -75,16 +75,14 @@ if (form) {
     if(!name||!project){status.textContent='Please add your name and a little about your project.';return null;}
     return { name, text:`Hello Boozuka,\n\nName: ${name}\nEmail: ${data.get('email')}\nInterested in: ${data.get('service')}\n\nProject idea:\n${project}\n\nPlease let me know the next steps and an estimated quote.` };
   }
+  const emailLink=document.querySelector('#email-fallback');
   form.addEventListener('submit', event => {
     event.preventDefault(); const brief=prepareBrief(); if(!brief) return;
-    window.location.href=`mailto:jashansinghmarkets@gmail.com?subject=${encodeURIComponent('Project inquiry from '+brief.name)}&body=${encodeURIComponent(brief.text)}`;
-    document.querySelector('#form-status').textContent='Your email app should open with your brief. Review and send it there. If it does not open, use WhatsApp or the email address shown on this page.';
-  });
-  document.querySelector('#whatsapp-inquiry')?.addEventListener('click',()=>{
-    const brief=prepareBrief(); if(!brief) return;
     window.open('https://wa.me/918289094569?text='+encodeURIComponent(brief.text),'_blank','noopener,noreferrer');
-    document.querySelector('#form-status').textContent='Your brief opens in WhatsApp. Review it there and press Send when you are ready.';
+    if(emailLink) emailLink.href='mailto:info@boozuka.com?subject='+encodeURIComponent('Project inquiry from '+brief.name)+'&body='+encodeURIComponent(brief.text);
+    document.querySelector('#form-status').textContent='Your brief opens in WhatsApp. Review it there and press Send. Prefer email? Use the email link below.';
   });
+  form.addEventListener('input',()=>{ if(!emailLink) return; const d=new FormData(form); emailLink.href='mailto:info@boozuka.com?subject='+encodeURIComponent('Project inquiry'+(d.get('name')?' from '+d.get('name'):''))+'&body='+encodeURIComponent(`Name: ${d.get('name')||''}\nEmail: ${d.get('email')||''}\nInterested in: ${d.get('service')||''}\n\n${d.get('project')||''}`); });
 }
 
 // Motion is progressive enhancement: every section stays visible without JS.

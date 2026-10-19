@@ -147,3 +147,9 @@
 @media (min-width:1101px){.seo-grid .seo-cta-card{grid-column:span 2}}
 .seo-cta-card .button{align-self:flex-start;width:auto;max-width:max-content}
 .seo-cta-card .button{display:inline-flex;gap:40px}
+.industry-list{list-style:none;margin:6px 0 18px;padding:0}
+.industry-list li{font-size:13.5px;line-height:1.7;color:var(--muted);padding:7px 0 7px 18px;border-bottom:1px solid var(--line);position:relative}
+.industry-list li::before{content:"";position:absolute;left:0;top:15px;width:6px;height:6px;background:var(--gold)}
+.industry-card .text-link{margin-top:auto}
+@media (min-width:1101px){.local-seo-grid{grid-template-columns:repeat(4,1fr)}}
+@media (min-width:1101px){.industry-card:first-child,.industry-card:last-child{grid-column:span 2}}

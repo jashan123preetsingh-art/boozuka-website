@@ -146,3 +146,4 @@
 @media (max-width:900px){.seo-head{grid-template-columns:1fr;gap:36px}.seo-timeline ol{grid-template-columns:1fr}.seo-timeline li{padding-right:0;padding-bottom:20px}}
 @media (min-width:1101px){.seo-grid .seo-cta-card{grid-column:span 2}}
 .seo-cta-card .button{align-self:flex-start;width:auto;max-width:max-content}
+.seo-cta-card .button{display:inline-flex;gap:40px}

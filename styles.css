@@ -144,3 +144,5 @@
 .seo-timeline li p{font-size:13.5px;line-height:1.85;color:var(--muted);margin:0}
 .seo-teaser{font-size:13px;margin:10px 0 0}.seo-teaser a{border-bottom:1px solid var(--gold);padding-bottom:3px}
 @media (max-width:900px){.seo-head{grid-template-columns:1fr;gap:36px}.seo-timeline ol{grid-template-columns:1fr}.seo-timeline li{padding-right:0;padding-bottom:20px}}
+@media (min-width:1101px){.seo-grid .seo-cta-card{grid-column:span 2}}
+.seo-cta-card .button{align-self:flex-start;width:auto;max-width:max-content}

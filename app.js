@@ -111,3 +111,16 @@ motionPreference.addEventListener('change',()=>{
   if (motionPreference.matches) { entrances?.disconnect(); activeEntrances.forEach(animation=>animation.cancel()); activeEntrances.clear(); }
 });
 window.addEventListener('pagehide',()=>{entrances?.disconnect();activeEntrances.forEach(animation=>animation.cancel());});
+
+// Magnetic primary CTAs (fine pointers only, respects reduced motion)
+if (window.matchMedia('(pointer:fine)').matches && !motionPreference.matches) {
+  document.querySelectorAll('.button.lime, .nav-contact').forEach(btn => {
+    btn.classList.add('magnetic');
+    btn.addEventListener('pointermove', e => {
+      const r = btn.getBoundingClientRect();
+      const x = (e.clientX - r.left - r.width / 2) * 0.18, y = (e.clientY - r.top - r.height / 2) * 0.3;
+      btn.style.transform = `translate(${x}px, ${y}px)`;
+    });
+    btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
+  });
+}

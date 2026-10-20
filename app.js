@@ -79,10 +79,10 @@ if (form) {
   form.addEventListener('submit', event => {
     event.preventDefault(); const brief=prepareBrief(); if(!brief) return;
     window.open('https://wa.me/918289094569?text='+encodeURIComponent(brief.text),'_blank','noopener,noreferrer');
-    if(emailLink) emailLink.href='mailto:info@boozuka.com?subject='+encodeURIComponent('Project inquiry from '+brief.name)+'&body='+encodeURIComponent(brief.text);
+    if(emailLink) emailLink.href='mailto:boozukaa@gmail.com?subject='+encodeURIComponent('Project inquiry from '+brief.name)+'&body='+encodeURIComponent(brief.text);
     document.querySelector('#form-status').textContent='Your brief opens in WhatsApp. Review it there and press Send. Prefer email? Use the email link below.';
   });
-  form.addEventListener('input',()=>{ if(!emailLink) return; const d=new FormData(form); emailLink.href='mailto:info@boozuka.com?subject='+encodeURIComponent('Project inquiry'+(d.get('name')?' from '+d.get('name'):''))+'&body='+encodeURIComponent(`Name: ${d.get('name')||''}\nBusiness: ${d.get('business')||''}\nCity: ${d.get('city')||''}\nWhatsApp: ${d.get('phone')||''}\nEmail: ${d.get('email')||''}\nInterested in: ${d.get('service')||''}\n\n${d.get('project')||''}`); });
+  form.addEventListener('input',()=>{ if(!emailLink) return; const d=new FormData(form); emailLink.href='mailto:boozukaa@gmail.com?subject='+encodeURIComponent('Project inquiry'+(d.get('name')?' from '+d.get('name'):''))+'&body='+encodeURIComponent(`Name: ${d.get('name')||''}\nBusiness: ${d.get('business')||''}\nCity: ${d.get('city')||''}\nWhatsApp: ${d.get('phone')||''}\nEmail: ${d.get('email')||''}\nInterested in: ${d.get('service')||''}\n\n${d.get('project')||''}`); });
 }
 
 // Motion is progressive enhancement: every section stays visible without JS.

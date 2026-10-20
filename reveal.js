@@ -1,0 +1,8 @@
+(function(){if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.remove('rv-on');return}
+var d=document,sel='main .section h2, main .eyebrow, main .bz-card, main .tm-card, main .tm-lead, main .pv5-plan, main .pv5-start-card, main .service-card, main .engagement-grid article, main .next-steps a, main .faq-list details, main .usecase-grid article, main .steps article, main .sample-card, main .pr-row';
+var els=[].slice.call(d.querySelectorAll(sel));
+d.querySelectorAll('main .section > h2, main .bz-head h2, main .section-intro h2, main .team-head h2, main .pr-block-head h2').forEach(function(h){if(h.dataset.rvw||h.querySelector('*'))return;h.dataset.rvw=1;var w=h.textContent.split(/(\s+)/);h.textContent='';w.forEach(function(t,i){if(/^\s+$/.test(t)){h.appendChild(d.createTextNode(t));return}var s=d.createElement('span');s.className='rvw';s.style.transitionDelay=(i*18)+'ms';s.textContent=t;h.appendChild(s)});h.classList.add('rv-words')});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('rv-in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+els.forEach(function(el){var p=el.parentElement,sib=[].slice.call(p.children).filter(function(c){return els.indexOf(c)>-1}),i=sib.indexOf(el);el.style.setProperty('--rvd',Math.min(i,6)*70+'ms');el.classList.add('rv');io.observe(el)});
+d.querySelectorAll('.rv-words').forEach(function(h){io.observe(h)});
+setTimeout(function(){d.querySelectorAll('.rv:not(.rv-in),.rv-words:not(.rv-in)').forEach(function(e){var r=e.getBoundingClientRect();if(r.top<innerHeight)e.classList.add('rv-in')})},1200);})();

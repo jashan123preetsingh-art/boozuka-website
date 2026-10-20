@@ -671,3 +671,5 @@ footer a,footer span,footer p,.footer-top a,.footer-nap,.footer-nap a{color:#E4E
 @media (max-width:1000px){.ai-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:800px){.ai-hero,.ai-human-band,.ai-band{grid-template-columns:1fr;gap:30px}.ai-hero{padding-top:40px!important}.ai-grid{grid-template-columns:1fr}.ai-human-band,.ai-band{margin:24px 16px;padding:30px 22px!important}.ai-flow{padding:26px 16px 14px}}
 .ai-tag{background:#C8A96A!important;color:#0B0F19!important;border:0!important;padding:4px 10px;border-radius:999px;font-weight:700}.ai-pcard .bz-v{font-size:28px!important}
+@media (max-width:720px){.sample-grid{grid-template-columns:minmax(0,1fr)!important}}.sample-grid>*{min-width:0}.sample-card{min-width:0;max-width:100%;box-sizing:border-box}.sample-card *{max-width:100%;box-sizing:border-box}
+.sample-card table{width:100%;table-layout:fixed;border-collapse:collapse}.sample-card th,.sample-card td{overflow:hidden;text-overflow:ellipsis;word-break:break-word}@media (max-width:400px){.sample-card th,.sample-card td{font-size:12px;padding-left:4px!important;padding-right:4px!important}}.sample-card{overflow:hidden}.sample-badge{z-index:3}

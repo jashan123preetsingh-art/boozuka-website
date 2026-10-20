@@ -726,3 +726,13 @@ body.page-pricing{padding-bottom:84px}
 .tm-lead .tm-role{color:#EADFC8}.tm-lead h3{font:500 clamp(26px,2.6vw,36px)/1.1 "Cormorant Garamond",Georgia,serif;color:#fff;margin:4px 0 6px}.tm-lead p.tm-t{color:#E4E0D6;margin:0}
 .tm-lead .text-link{color:#fff;border-color:#C8A96A}
 @media (max-width:800px){.tm-grid{grid-template-columns:1fr}.tm-card{padding:22px;grid-template-columns:44px 1fr;gap:4px 14px}.tm-ic{width:44px;height:44px}.tm-lead{grid-template-columns:1fr;gap:16px;padding:26px 22px}.tm-mono{width:64px;height:64px;font-size:26px}}
+/* v7b: stacked cards need gaps + inner padding */
+.proof-list{display:flex!important;flex-direction:column;gap:12px}.proof-list li{padding:22px 26px!important;margin:0!important}
+.page-index .service-grid>.service-card+.service-card,.coaching-grid>.service-card+.service-card{margin-top:14px!important}
+.page-index .service-card{padding:30px 32px!important;min-height:0}
+.coaching-grid .service-card{padding:26px 32px!important}
+.coaching-grid .service-card>*:first-child:empty{display:none}
+.founder-mark{border-radius:16px!important;overflow:hidden}
+@media (max-width:800px){.coaching-grid .service-card{grid-template-columns:1fr!important;padding:22px!important}.page-index .service-card{padding:24px!important}.proof-list li{padding:20px!important}}
+.coaching-grid .card-top{display:block!important;visibility:visible!important;opacity:1!important}.coaching-grid .eyebrow-num{display:block!important;font:400 34px/1 "Cormorant Garamond",Georgia,serif!important;color:#7A5C1E!important;letter-spacing:0!important}.coaching-grid .service-card::after{display:none}.coaching-grid .service-card:hover{padding-left:32px!important;transform:translateY(-2px)}@media (max-width:800px){.coaching-grid .eyebrow-num{font-size:28px!important;margin-bottom:6px}}
+.coaching-grid .service-card{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)!important;gap:6px 40px!important}.coaching-grid .card-top{display:none!important}.coaching-grid h3{grid-column:1!important}.coaching-grid .service-card>:not(.card-top):not(h3){grid-column:2!important}@media (max-width:800px){.coaching-grid .service-card{grid-template-columns:1fr!important}.coaching-grid h3,.coaching-grid .service-card>:not(.card-top):not(h3){grid-column:1!important}}

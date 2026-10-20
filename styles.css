@@ -685,3 +685,24 @@ footer a,footer span,footer p,.footer-top a,.footer-nap,.footer-nap a{color:#E4E
 .offer-teaser{margin:0 0 14px;padding:12px 16px;background:#F3EFE6;border:1px solid #C8A96A;border-radius:10px;color:#1F2937!important;font-size:15px}.offer-teaser a{color:#0B0F19;text-decoration:underline;font-weight:600}
 @media (max-width:800px){.pv5-offer{grid-template-columns:1fr;margin:8px 16px 0;padding:26px 20px!important}.pv5-offer-list{grid-template-columns:1fr}.pv5-offer-amt{font-size:46px}}
 .pv5-offer-name{font:700 14px Manrope,Arial,sans-serif;color:var(--ink);margin:0 0 8px}
+/* v6 sticky consult */
+.pv6-consult{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-top:28px!important;padding-bottom:28px!important}
+.pv6-consult h2{font-size:clamp(26px,2.6vw,36px)!important;margin:0!important;max-width:30ch}
+.pv6-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:center;align-items:center;gap:24px;padding:12px var(--gutter);background:rgba(11,15,25,.96);backdrop-filter:blur(10px);border-top:1px solid #C8A96A;box-shadow:0 -12px 30px -18px rgba(11,15,25,.6);min-height:68px;box-sizing:border-box}
+.pv6-sticky p{margin:0;color:#fff;font:500 21px/1.25 "Cormorant Garamond",Georgia,serif}
+.pv6-sticky .button{padding:12px 18px;flex:none;color:#0B0F19!important}
+body.page-pricing{padding-bottom:84px}
+@media (max-width:600px){.pv6-sticky{gap:12px;padding:10px 16px;justify-content:space-between}.pv6-sticky p{font-size:15px;line-height:1.25}.pv6-sticky .button{padding:11px 14px;gap:10px}body.page-pricing{padding-bottom:96px}}
+@media (max-width:370px){.pv6-sticky p{font-size:14px}}
+/* v6b ONE card style (replaces v3 "white cards on Ivory") */
+.faq-list details{background:transparent!important;border:0!important;border-bottom:1px solid var(--line)!important;border-radius:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
+.faq-list details:first-child{border-top:1px solid var(--line)!important}.faq-list summary{padding-left:0!important;padding-right:0!important}.faq-list details p{padding:0 0 20px!important}
+.engagement-grid article,.usecase-grid article,.trust-grid article,.proof-list li,.team-list li,.industry-card,.about-facts>div,.service-card,.sample-card,.price-card,.bz-card,.pv5-plan,.pv5-start-card,.next-steps a{border:1px solid var(--line);border-radius:16px!important;box-shadow:0 1px 2px rgba(11,15,25,.04),0 14px 34px -26px rgba(11,15,25,.28)}
+.engagement-grid article,.usecase-grid article,.trust-grid article,.industry-card,.about-facts>div{padding:28px!important;box-sizing:border-box;min-width:0}
+.proof-list li,.team-list li{padding:20px 22px!important}
+.engagement-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:20px!important}
+.engagement .section-intro{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}.engagement .section-intro>p:last-child{max-width:44ch;overflow-wrap:anywhere}
+@media (max-width:800px){.engagement-grid{grid-template-columns:1fr!important}.engagement .section-intro{grid-template-columns:1fr!important}.engagement-grid article,.usecase-grid article,.trust-grid article,.industry-card{padding:22px!important}}
+.steps article{border:1px solid var(--line)!important;border-radius:16px!important;padding:24px 28px!important;margin-bottom:14px;box-shadow:0 1px 2px rgba(11,15,25,.04),0 14px 34px -26px rgba(11,15,25,.28)}
+.coaching-grid .service-card{padding:28px!important}
+@media (max-width:600px){.steps article{padding:20px!important}.coaching-grid .service-card{padding:22px!important}}

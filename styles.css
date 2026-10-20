@@ -594,3 +594,10 @@ footer a,footer span,footer p,.footer-top a,.footer-nap,.footer-nap a{color:#E4E
 @media (max-width:900px){.pr-block-head{grid-template-columns:1fr!important}.pr-block-head h2{font-size:34px}.pv5-founding::after{display:none}.pv5-index dl div{flex-wrap:wrap;gap:4px}}
 .pv5-mix{font:500 clamp(20px,1.8vw,24px)/1.35 "Cormorant Garamond",Georgia,serif;color:var(--ink);margin:18px 0 0;max-width:60ch}.pv5-maint{margin-top:8px!important;font-size:14px;font-weight:600;color:#0F3B33!important}
 .pv5-honest{margin-top:4px!important;font-size:14px;color:#374151!important}.seo-price-teaser{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:28px;padding:20px 24px;border:1px solid var(--line);border-left:3px solid #0F3B33;border-radius:12px;background:#fff;color:#1F2937}.seo-price-teaser p{margin:0;max-width:70ch;color:#1F2937!important}.seo-price-teaser b{color:#0B0F19}.seo-price-teaser .text-link{color:#0B0F19!important}
+.pv5-full{display:grid!important;grid-template-columns:1fr 1fr;gap:6%;background:#0B0F19;color:#fff;border-radius:20px;margin:0 var(--gutter);padding:56px!important;border:1px solid #C8A96A}
+.pv5-badge-static{position:static!important;display:inline-block}
+.pv5-full h2{color:#fff;font-size:clamp(36px,4vw,58px);margin:14px 0 10px}.pv5-full-lead{color:#E4E0D6;max-width:52ch}
+.pv5-full-amt{font:500 52px/1 "Cormorant Garamond",Georgia,serif;color:#fff;margin:22px 0}.pv5-full-amt small{display:block;font:600 12px Manrope,Arial,sans-serif;color:#C9CDD3;margin-bottom:6px}.pv5-full-amt span{display:block;font:500 14px Manrope,Arial,sans-serif;color:#C9CDD3;margin-top:8px}
+.pv5-diff{margin-top:22px;padding:16px 18px;border-radius:10px;background:rgba(255,255,255,.06);color:#E4E0D6;font-size:15px}.pv5-diff b{color:#fff}
+.fg-link{margin-top:10px;color:#1F2937!important}.fg-link a{color:#0B0F19;text-decoration:underline}
+@media (max-width:900px){.pv5-full{grid-template-columns:1fr;margin:0 16px;padding:30px 22px!important}.pv5-full-amt{font-size:42px}}

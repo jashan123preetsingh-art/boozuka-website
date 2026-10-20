@@ -736,3 +736,22 @@ body.page-pricing{padding-bottom:84px}
 @media (max-width:800px){.coaching-grid .service-card{grid-template-columns:1fr!important;padding:22px!important}.page-index .service-card{padding:24px!important}.proof-list li{padding:20px!important}}
 .coaching-grid .card-top{display:block!important;visibility:visible!important;opacity:1!important}.coaching-grid .eyebrow-num{display:block!important;font:400 34px/1 "Cormorant Garamond",Georgia,serif!important;color:#7A5C1E!important;letter-spacing:0!important}.coaching-grid .service-card::after{display:none}.coaching-grid .service-card:hover{padding-left:32px!important;transform:translateY(-2px)}@media (max-width:800px){.coaching-grid .eyebrow-num{font-size:28px!important;margin-bottom:6px}}
 .coaching-grid .service-card{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)!important;gap:6px 40px!important}.coaching-grid .card-top{display:none!important}.coaching-grid h3{grid-column:1!important}.coaching-grid .service-card>:not(.card-top):not(h3){grid-column:2!important}@media (max-width:800px){.coaching-grid .service-card{grid-template-columns:1fr!important}.coaching-grid h3,.coaching-grid .service-card>:not(.card-top):not(h3){grid-column:1!important}}
+/* v8 sample cards */
+.sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.sample-grid.sg8{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:24px!important;align-items:stretch!important;grid-auto-rows:1fr}
+.sg8 .sample-card.sc8{display:flex!important;flex-direction:column;height:100%;margin:0!important;padding:0!important;background:#fff;position:relative}
+.sg8 .sc8 .sample-badge{position:absolute;top:14px;right:14px;left:auto}
+.sg8 .sc-vis{height:250px;flex:none;overflow:hidden;background:var(--panel);border-bottom:1px solid var(--line);position:relative}
+.sg8 .sc-frame{display:flex;flex-direction:column}.sg8 .sc-frame .mb-bar{flex:none;display:flex;align-items:center;gap:6px;padding:9px 14px;background:#EFECE5;border-bottom:1px solid var(--line);font-size:12px;color:#4B5563}
+.sg8 .sc-frame .mb-bar i{width:9px;height:9px;border-radius:50%;background:#D5D0C4;display:block}.sg8 .sc-frame .mb-bar span{margin-left:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sg8 .sc-frame img{flex:1;min-height:0;width:100%;height:100%;object-fit:cover;display:block}
+.sg8 .sc-mock{padding:18px 18px 0;display:flex;justify-content:center}.sg8 .sc-mock>*{width:100%;margin:0!important;max-height:none}
+.sg8 .sc-mock .mock-phone{max-width:300px}
+.sg8 .sc-mock:after{content:"";position:absolute;left:0;right:0;bottom:0;height:40px;background:linear-gradient(rgba(243,241,236,0),var(--panel));pointer-events:none}
+.sg8 .sc8 figcaption{flex:1;display:flex;flex-direction:column;padding:24px 28px 28px!important;margin:0!important}
+.sg8 .sc8 figcaption h3{margin:0 0 8px}.sg8 .sc8 figcaption p{margin:0}
+.sg8 .sc-link{margin-top:auto;padding-top:16px;font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px;align-self:flex-start}
+.sg8 .sc-link:hover{color:var(--deep-gold)}.sg8 .sc-link:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:4px}
+.sample-grid.sg8.sg-local{grid-template-columns:repeat(6,minmax(0,1fr))!important}.sg-local>:nth-child(-n+3){grid-column:span 2}.sg-local>:nth-child(n+4){grid-column:span 3}
+@media (max-width:980px){.sample-grid.sg8{grid-template-columns:repeat(2,minmax(0,1fr))!important}.sg-local>*{grid-column:auto!important}}
+@media (max-width:720px){.sample-grid.sg8{grid-template-columns:minmax(0,1fr)!important;grid-auto-rows:auto}.sg8 .sc-vis{height:220px}}

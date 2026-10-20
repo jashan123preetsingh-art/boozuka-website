@@ -124,3 +124,19 @@ if (window.matchMedia('(pointer:fine)').matches && !motionPreference.matches) {
     btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
   });
 }
+
+// v4: growth calculator (local.html). Estimate only; formula shown on the page.
+(function(){
+  const f=document.getElementById('growth-calc'); if(!f) return;
+  const g=id=>document.getElementById(id);
+  const num=(id,max)=>{const v=parseFloat(g(id).value);return isFinite(v)?Math.min(Math.max(v,0),max):0;};
+  const inr=n=>Math.round(n).toLocaleString('en-IN');
+  function calc(){
+    const e=num('c-enq',100000), m=num('c-miss',100), c=num('c-conv',100), v=num('c-val',10000000);
+    const cust=e*(m/100)*(c/100), rev=cust*v;
+    g('r-cust').textContent=String(Math.floor(cust));
+    g('r-rev').textContent=inr(rev);
+    g('r-formula').textContent=`${inr(e)} × ${m}% × ${c}% = ${(Math.round(cust*10)/10).toLocaleString('en-IN')} customers × ₹${inr(v)}`;
+  }
+  f.addEventListener('input',calc); f.addEventListener('submit',e=>e.preventDefault()); calc();
+})();

@@ -755,3 +755,4 @@ body.page-pricing{padding-bottom:84px}
 .sample-grid.sg8.sg-local{grid-template-columns:repeat(6,minmax(0,1fr))!important}.sg-local>:nth-child(-n+3){grid-column:span 2}.sg-local>:nth-child(n+4){grid-column:span 3}
 @media (max-width:980px){.sample-grid.sg8{grid-template-columns:repeat(2,minmax(0,1fr))!important}.sg-local>*{grid-column:auto!important}}
 @media (max-width:720px){.sample-grid.sg8{grid-template-columns:minmax(0,1fr)!important;grid-auto-rows:auto}.sg8 .sc-vis{height:220px}}
+.founder-block.cofounder{border-top:1px solid rgba(255,255,255,.14);margin-top:0}

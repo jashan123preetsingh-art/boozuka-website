@@ -20,7 +20,7 @@ document.querySelectorAll('a[data-service]').forEach(link => {
 });
 const examples = {
   leads: {
-    source: 'NEW WEBSITE INQUIRY',
+    source: 'New website enquiry',
     input: '“Hi, we run a coaching centre and need help following up with course enquiries.”',
     stages: [
       {title:'One inquiry. A clear handover.',copy:'See how an inquiry can become a structured lead and a reply for your team to review.',fields:[['Source','Website enquiry'],['Next step','Prepare a follow-up draft']],badge:'Ready to explore',status:'Sample workflow · ready'},
@@ -29,7 +29,7 @@ const examples = {
     ]
   },
   reporting: {
-    source: 'SAMPLE WEEKLY ACTIVITY',
+    source: 'Sample weekly activity',
     input: '“This week: 24 new enquiries, 18 contacted, 6 still awaiting follow-up. Prepare a team handover.”',
     stages: [
       {title:'From scattered numbers to a handover.',copy:'Explore how a recurring report can organise activity and flag the next action for your team.',fields:[['Source','Fixed sample activity'],['Next step','Organise a team report']],badge:'Ready to explore',status:'Sample workflow · ready'},
@@ -72,8 +72,8 @@ if (form) {
     const data=new FormData(form);
     const name=String(data.get('name')).trim(), project=String(data.get('project')).trim();
     const status=document.querySelector('#form-status');
-    if(!name||!project){status.textContent='Please add your name and a little about your project.';return null;}
-    return { name, text:`Hello Boozuka,\n\nName: ${name}\nEmail: ${data.get('email')}\nInterested in: ${data.get('service')}\n\nProject idea:\n${project}\n\nPlease let me know the next steps and an estimated quote.` };
+    if(!name||!project){status.textContent='Please add your name and what you want more of.';return null;}
+    return { name, text:`Hello Boozuka,\n\nName: ${name}\nBusiness: ${data.get('business')||''}\nCity: ${data.get('city')||''}\nWhatsApp: ${data.get('phone')||''}\nEmail: ${data.get('email')||''}\nInterested in: ${data.get('service')}\n\nWhat I want more of:\n${project}\n\n[contact-form]` };
   }
   const emailLink=document.querySelector('#email-fallback');
   form.addEventListener('submit', event => {
@@ -82,12 +82,12 @@ if (form) {
     if(emailLink) emailLink.href='mailto:info@boozuka.com?subject='+encodeURIComponent('Project inquiry from '+brief.name)+'&body='+encodeURIComponent(brief.text);
     document.querySelector('#form-status').textContent='Your brief opens in WhatsApp. Review it there and press Send. Prefer email? Use the email link below.';
   });
-  form.addEventListener('input',()=>{ if(!emailLink) return; const d=new FormData(form); emailLink.href='mailto:info@boozuka.com?subject='+encodeURIComponent('Project inquiry'+(d.get('name')?' from '+d.get('name'):''))+'&body='+encodeURIComponent(`Name: ${d.get('name')||''}\nEmail: ${d.get('email')||''}\nInterested in: ${d.get('service')||''}\n\n${d.get('project')||''}`); });
+  form.addEventListener('input',()=>{ if(!emailLink) return; const d=new FormData(form); emailLink.href='mailto:info@boozuka.com?subject='+encodeURIComponent('Project inquiry'+(d.get('name')?' from '+d.get('name'):''))+'&body='+encodeURIComponent(`Name: ${d.get('name')||''}\nBusiness: ${d.get('business')||''}\nCity: ${d.get('city')||''}\nWhatsApp: ${d.get('phone')||''}\nEmail: ${d.get('email')||''}\nInterested in: ${d.get('service')||''}\n\n${d.get('project')||''}`); });
 }
 
 // Motion is progressive enhancement: every section stays visible without JS.
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
-const entranceTargets = document.querySelectorAll('.section-intro, .page-intro, .home-about, .workflow-console, .closing-cta > div, .service-grid, .founder');
+const entranceTargets = []; // v3: one hero moment only, no per-section fades
 const activeEntrances = new Set();
 let entrances;
 if ('IntersectionObserver' in window && !motionPreference.matches) {

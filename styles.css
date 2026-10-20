@@ -592,3 +592,5 @@ footer a,footer span,footer p,.footer-top a,.footer-nap,.footer-nap a{color:#E4E
 .pv5-founding::after{right:auto;left:52%;top:-60px}
 .pv5-hero h1 em{font-style:italic!important}
 @media (max-width:900px){.pr-block-head{grid-template-columns:1fr!important}.pr-block-head h2{font-size:34px}.pv5-founding::after{display:none}.pv5-index dl div{flex-wrap:wrap;gap:4px}}
+.pv5-mix{font:500 clamp(20px,1.8vw,24px)/1.35 "Cormorant Garamond",Georgia,serif;color:var(--ink);margin:18px 0 0;max-width:60ch}.pv5-maint{margin-top:8px!important;font-size:14px;font-weight:600;color:#0F3B33!important}
+.pv5-honest{margin-top:4px!important;font-size:14px;color:#374151!important}.seo-price-teaser{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:28px;padding:20px 24px;border:1px solid var(--line);border-left:3px solid #0F3B33;border-radius:12px;background:#fff;color:#1F2937}.seo-price-teaser p{margin:0;max-width:70ch;color:#1F2937!important}.seo-price-teaser b{color:#0B0F19}.seo-price-teaser .text-link{color:#0B0F19!important}

@@ -949,3 +949,5 @@ body.page-pricing{padding-bottom:84px}
 .cs-ex ul{margin:16px 0 24px;padding-left:1.1em;color:#374151;line-height:1.8}
 .cs-ex .gx-cta a.cs-link{color:var(--ink);font-weight:600}
 @media (max-width:860px){.cs-ex{grid-template-columns:minmax(0,1fr)}}
+
+.v24-links{display:flex;flex-wrap:wrap;gap:8px 18px;padding:22px var(--gutter);border-top:1px solid rgba(255,255,255,.08);font-size:13px}.v24-links .sf-h{width:100%;margin:0 0 4px}.v24-links a{color:inherit;opacity:.78;text-decoration:none}.v24-links a:hover{opacity:1;text-decoration:underline}

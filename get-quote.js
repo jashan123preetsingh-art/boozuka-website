@@ -75,7 +75,7 @@
       show(steps.length-1);
       var w=window.open(waLink,'_blank','noopener'); if(!w) location.href=waLink;
     }
-    fetch('https://formsubmit.co/ajax/boozukaa@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)})
+    fetch('https://formsubmit.co/ajax/boozuka@boozuka.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)})
       .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
       .then(function(x){ if(done) return; done=true; clearTimeout(timer);
         if(x.ok&&String(x.j.success)==='true'){ st.textContent=''; show(steps.length-1); if(window.gtag) gtag('event','generate_lead'); }

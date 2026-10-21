@@ -31,7 +31,7 @@ Starting prices are listed at https://boozuka.com/pricing.html. Custom quotes af
 ## Key pages
 - [Home](https://boozuka.com/)
 - [Services](https://boozuka.com/services.html)
-- [AI Services (AI automation, WhatsApp chatbots)](https://boozuka.com/automation.html)
+- [AI Services (AI automation, WhatsApp chatbots)](https://boozuka.com/services.html#ai-services)
 - [Local Growth (Google Maps and local SEO)](https://boozuka.com/local.html)
 - [Coaching institutes](https://boozuka.com/coaching.html)
 - [Pricing](https://boozuka.com/pricing.html)

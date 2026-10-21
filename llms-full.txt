@@ -31,7 +31,7 @@ Starting prices are listed at https://boozuka.com/pricing.html. Custom quotes af
 ## Key pages
 - [Home](https://boozuka.com/)
 - [Services](https://boozuka.com/services.html)
-- [AI Services (AI automation, WhatsApp chatbots)](https://boozuka.com/automation.html)
+- [AI Services (AI automation, WhatsApp chatbots)](https://boozuka.com/services.html#ai-services)
 - [Local Growth (Google Maps and local SEO)](https://boozuka.com/local.html)
 - [Coaching institutes](https://boozuka.com/coaching.html)
 - [Pricing](https://boozuka.com/pricing.html)
@@ -53,7 +53,7 @@ Headline: Websites, ads, SEO and WhatsApp automation, run by one in-house team
 Summary: Website development, SEO services, Meta and Google ads, CRM and video for businesses in Ludhiana and Punjab, built and run by one in-house team.
 
 ### AI Services (AI automation, WhatsApp chatbots)
-URL: https://boozuka.com/automation.html
+URL: https://boozuka.com/services.html#ai-services
 Headline: AI that answers, follows up and books, while you run your business.
 Summary: AI automation for Punjab businesses: WhatsApp chatbot, website chatbot, lead capture to CRM and follow-up reminders, set up and monitored in-house.
 

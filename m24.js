@@ -14,6 +14,6 @@ await type(m,MSG,22,id);await wait(500);if(id!==tk)return;
 step(2);for(const c of $$('.wf24-cell')){await wait(380);if(id!==tk)return;c.classList.add('in')}await wait(600);if(id!==tk)return;
 step(3);await type($('#wf24-draft'),DR,18,id);await wait(700);if(id!==tk)return;
 const b=$('#wf24-send');b.classList.add('press');await wait(180);b.classList.remove('press');step(4);final();r.classList.remove('run')}
-$('#wf24-run').addEventListener('click',run);
+$('#wf24-run').addEventListener('click',e=>{e.stopPropagation();run()});r.addEventListener('click',e=>{if(!e.target.closest('a,button'))location.href='samples/flow/'});
 final();r.classList.remove('run');
 const io=new IntersectionObserver(e=>{if(e[0].isIntersecting){io.disconnect();run()}},{threshold:.35});io.observe(r)})();

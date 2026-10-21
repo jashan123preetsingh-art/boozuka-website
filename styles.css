@@ -805,3 +805,27 @@ body.page-pricing{padding-bottom:84px}
 .v12-related ul{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-wrap:wrap;gap:12px 28px}
 .v12-related a{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
 .v12-related a:hover{color:var(--deep-gold)}
+/* v13 blog */
+.ar-crumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0 0 18px;font-size:13.5px;color:#374151}.ar-crumbs li+li:before{content:"/";margin-right:6px;color:#6B7280}.ar-crumbs a{color:#374151;text-decoration:underline;text-underline-offset:3px}
+.ar-head{padding-bottom:24px!important}.ar-head h1{max-width:20ch;margin:10px 0 16px}.ar-meta{color:#374151;font-size:15px;margin:0 0 28px}.ar-meta a{color:var(--ink);font-weight:600}
+.ar-hero{margin:0}.ar-hero img{width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:16px;border:1px solid var(--line);display:block}.ar-hero figcaption{font-size:13px;color:#4B5563;margin-top:8px}
+.ar-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:56px;align-items:start;padding-top:24px!important}
+.ar-toc{position:sticky;top:100px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 24px;box-shadow:0 1px 2px rgba(11,15,25,.04),0 14px 34px -26px rgba(11,15,25,.28)}
+.ar-toc-h{font-weight:700;font-size:14px;margin:0 0 10px;color:var(--ink)}.ar-toc ol{margin:0;padding-left:18px;display:grid;gap:8px;font-size:14px}.ar-toc a{color:#374151;text-decoration:none}.ar-toc a:hover{color:var(--ink);text-decoration:underline}
+.ar-body{max-width:70ch;font-size:18px;line-height:1.75;color:#1F2937}
+.ar-body h2{font-size:clamp(28px,3vw,36px);line-height:1.2;margin:48px 0 14px;scroll-margin-top:100px;color:var(--ink)}.ar-body h3{font-size:20px;margin:28px 0 8px;color:var(--ink)}
+.ar-body p,.ar-body ul,.ar-body ol{margin:0 0 18px}.ar-body li{margin-bottom:8px}.ar-body ul,.ar-body ol{padding-left:24px}
+.ar-body a{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+.ar-lede{font-size:20px;line-height:1.7;color:var(--ink)}
+.ar-faq{border-top:1px solid var(--line)}.ar-faq details{border-bottom:1px solid var(--line);padding:16px 0;background:transparent}.ar-faq summary{font-weight:700;cursor:pointer;color:var(--ink);font-size:17px}.ar-faq details p{margin:10px 0 0;font-size:16.5px}
+.ar-cta{margin-top:48px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px;box-shadow:0 1px 2px rgba(11,15,25,.04),0 14px 34px -26px rgba(11,15,25,.28)}.ar-cta h2{margin:6px 0 10px!important;font-size:clamp(26px,2.6vw,32px)}.ar-cta .button{margin-top:8px;text-decoration:none!important}
+.bl-lead{max-width:60ch;color:#374151;font-size:17px}.bl-hero{padding-bottom:16px!important}
+.bl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+.bl-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(11,15,25,.04),0 14px 34px -26px rgba(11,15,25,.28)}
+.bl-img img{width:100%;height:220px;object-fit:cover;display:block}.bl-body{padding:24px 28px 28px;display:flex;flex-direction:column;flex:1}
+.bl-cat{font-size:13px;font-weight:600;color:#374151;margin:0 0 8px}.bl-t{font-size:clamp(22px,2.2vw,26px);line-height:1.25;margin:0 0 10px}.bl-t a{color:var(--ink);text-decoration:none}.bl-t a:hover{text-decoration:underline}
+.bl-body p{margin:0;color:#374151}.bl-body .sc-link{margin-top:auto;padding-top:16px;font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px;align-self:flex-start}
+@media (max-width:980px){.ar-layout{grid-template-columns:minmax(0,1fr);gap:28px}.ar-toc{position:static}.bl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:720px){.bl-grid{grid-template-columns:minmax(0,1fr)}.ar-body{font-size:17px}.ar-cta{padding:24px 20px}.ar-lede{font-size:18px}}
+.bl-t{font-size:clamp(22px,1.9vw,26px)!important;line-height:1.25!important}
+.ar-head h1,.bl-hero h1{font-family:'Cormorant Garamond',Georgia,serif!important;font-weight:500!important;letter-spacing:-.01em;line-height:1.05!important;font-size:clamp(40px,5.4vw,72px)!important}

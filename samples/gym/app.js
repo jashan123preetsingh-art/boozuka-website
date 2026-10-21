@@ -92,7 +92,7 @@ function kpiData(){
  var mStart=new Date(today());mStart.setDate(1);var col=S.payments.filter(function(p){return p.date>=mStart.getTime()}).reduce(function(a,p){return a+p.amount},0);
  return {act:act,due:due,tci:tci,yci:ycI,col:col}}
 function monthly(){var out=[],lab=[];for(var i=11;i>=0;i--){var a=new Date(today());a.setDate(1);a.setMonth(a.getMonth()-i);var b=new Date(a);b.setMonth(b.getMonth()+1);out.push(S.payments.filter(function(p){return p.date>=a.getTime()&&p.date<b.getTime()}).reduce(function(s,p){return s+p.amount},0));lab.push(a.toLocaleDateString('en-IN',{month:'short'}))}return [out,lab]}
-function vDash(){var k=kpiData(),mo=monthly(),t0=today().getTime();
+function vDash0(){var k=kpiData(),mo=monthly(),t0=today().getTime();
  var hm=[];for(var d=0;d<7;d++){hm.push([]);for(var h=0;h<16;h++)hm[d].push(0)}S.checkins.forEach(function(c){if(c.ts<t0-27*DAY)return;var dt=new Date(c.ts),dw=(dt.getDay()+6)%7,hr=dt.getHours()-5;if(hr>=0&&hr<16)hm[dw][hr]++});var hmx=Math.max.apply(0,hm.map(function(r){return Math.max.apply(0,r)}));
  var DN=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
  var mix={};S.members.forEach(function(m){if(m.expiry>=t0)mix[m.plan]=(mix[m.plan]||0)+1});var parts=Object.keys(PLANS).map(function(p){return [p,mix[p]||0,PCOL[p]]});
@@ -320,5 +320,25 @@ D.addEventListener('click',function(e){var t;
  if((t=e.target.closest('.np-i'))){var c=CFG();if(c.read.indexOf(t.dataset.nid)<0)c.read.push(t.dataset.nid);save();closeNotif()}
 },true);
 D.addEventListener('keydown',function(e){if(e.key=='Escape'&&$('.np'))closeNotif()});
+/* ================= v23 high-tech layer ================= */
+var LIVE={n:0,ev:[],t:null};
+function floorNow(){var h=new Date().getHours()+new Date().getMinutes()/60,base=h<5?2:h<7?18:h<10?34:h<16?14:h<21?38:10;return Math.max(1,Math.round(base+Math.sin(Date.now()/9000)*4))}
+function gauge(v,max,lab,c){var R=54,C=2*Math.PI*R,p=Math.min(1,v/max);return '<svg class="gauge" viewBox="0 0 140 140" role="img" aria-label="'+esc(lab)+' '+v+' of '+max+'"><defs><linearGradient id="gg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#2DD4BF"/><stop offset="1" stop-color="'+(c||'#8B7CF6')+'"/></linearGradient></defs><circle cx="70" cy="70" r="'+R+'" fill="none" stroke="currentColor" stroke-opacity=".08" stroke-width="12"/><circle class="g-arc" cx="70" cy="70" r="'+R+'" fill="none" stroke="url(#gg)" stroke-width="12" stroke-linecap="round" transform="rotate(-90 70 70)" stroke-dasharray="'+C+'" stroke-dashoffset="'+C+'" style="--to:'+(C*(1-p)).toFixed(1)+'"/><text x="70" y="70" text-anchor="middle" class="g-v" id="gv">'+v+'</text><text x="70" y="90" text-anchor="middle" class="g-l">of '+max+' capacity</text></svg>'}
+function liveEv(){var act=S.members.filter(function(m){return daysTo(m.expiry)>=0});var m=act[Math.floor(Math.random()*act.length)],k=Math.random();var t=new Date();
+ return k<.62?{i:'check',c:'ok',t:'<b>'+esc(m.name)+'</b> checked in',s:'PIN '+m.pin+' · '+m.plan,ts:t}:k<.8?{i:'rupee',c:'ac',t:'UPI payment from <b>'+esc(m.name.split(' ')[0])+'</b>',s:inr2(PLANS[m.plan].p)+' · '+m.plan,ts:t}:k<.92?{i:'cal',c:'warn',t:'Class booked by <b>'+esc(m.name.split(' ')[0])+'</b>',s:S.classes[Math.floor(Math.random()*S.classes.length)].name,ts:t}:{i:'users',c:'ac',t:'New enquiry via <b>Instagram</b>',s:'Interested in Quarterly',ts:t}}
+function evRow(e){return '<div class="lv-r"><span class="np-ic '+e.c+'">'+ic(e.i)+'</span><span class="lv-t">'+e.t+'<small>'+e.s+'</small></span><span class="lv-ts mono">'+e.ts.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',second:'2-digit'})+'</span></div>'}
+function vDash(){if(!LIVE.ev.length)for(var i=0;i<6;i++){var e=liveEv();e.ts=new Date(Date.now()-(i+1)*47000);LIVE.ev.push(e)}LIVE.n=floorNow();
+ var ci=S.checkins.filter(function(c){return c.ts>=today().getTime()}).length;
+ var live='<div class="g g3l" style="margin-top:16px"><div class="card glow"><div class="card-h"><div><h3>On the floor now</h3><p class="mut">Live occupancy · demo</p></div><span class="live-pill"><i></i>LIVE</span></div><div class="card-b gauge-b">'+gauge(LIVE.n,60,'People on the floor')+'<div class="g-meta"><div><span>Peak today</span><b class="mono">41</b></div><div><span>Check-ins</span><b class="mono">'+ci+'</b></div><div><span>Avg session</span><b class="mono">68m</b></div></div></div></div>'+
+ '<div class="card glow lv-card"><div class="card-h"><div><h3>Live activity</h3><p class="mut">Check-ins, payments and bookings as they happen</p></div><span class="live-pill"><i></i>STREAMING</span></div><div class="card-b"><div class="lv" id="lv">'+LIVE.ev.slice(0,6).map(evRow).join('')+'</div></div></div>'+
+ '<div class="card glow"><div class="card-h"><div><h3>System</h3><p class="mut">Front-desk terminal health</p></div></div><div class="card-b sys">'+[['Kiosk','Online','ok'],['WhatsApp','Connected','ok'],['UPI gateway','Demo mode','warn'],['Backup','2 min ago','ok']].map(function(x){return '<div><span class="sd '+x[2]+'"></span><span>'+x[0]+'</span><b class="mono">'+x[1]+'</b></div>'}).join('')+'<div class="sys-bar"><span>Sync</span><i><b style="width:100%"></b></i></div></div></div></div>';
+ return vDash0()+live}
+function countUp(){$$('.kpi .v').forEach(function(el){var tx=el.textContent,m=tx.match(/^([^\d]*)([\d,.]+)(.*)$/);if(!m)return;var n=parseFloat(m[2].replace(/,/g,'')),dec=(m[2].split('.')[1]||'').length,t0=performance.now(),d=900;if(!(n>0))return;
+ (function f(t){var p=Math.min(1,(t-t0)/d),e=1-Math.pow(1-p,3),v=n*e;el.textContent=m[1]+(dec?v.toFixed(dec):Math.round(v).toLocaleString('en-IN'))+m[3];if(p<1)requestAnimationFrame(f);else el.textContent=tx})(t0)})}
+function liveTick(){if(route()!=='dashboard'||D.hidden)return;var e=liveEv();LIVE.ev.unshift(e);LIVE.ev=LIVE.ev.slice(0,12);var l=$('#lv');if(l){l.insertAdjacentHTML('afterbegin',evRow(e));l.firstElementChild.classList.add('new');while(l.children.length>6)l.lastElementChild.remove()}
+ LIVE.n=Math.max(1,Math.min(60,LIVE.n+(Math.random()<.55?1:-1)));var gv=$('#gv');if(gv){gv.textContent=LIVE.n;var a=$('.g-arc');a.style.strokeDashoffset=(2*Math.PI*54*(1-LIVE.n/60)).toFixed(1)}var lp=$('#lpn');if(lp)lp.textContent=LIVE.n}
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(liveTick,4200);
+var _ar=afterRender;afterRender=function(r){_ar(r);if(r!=='login'){countUp();var top=$('.top .search-btn');if(top&&!$('.top .live-top'))top.insertAdjacentHTML('beforebegin','<span class="live-top hide-m" title="People on the floor right now (demo)"><i></i><b id="lpn">'+(LIVE.n||floorNow())+'</b> on floor</span>')}};
+D.addEventListener('pointermove',function(e){var c=e.target.closest&&e.target.closest('.card');if(!c)return;var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')},{passive:true});
 load();render();
 })();

@@ -800,3 +800,8 @@ body.page-pricing{padding-bottom:84px}
 @media (max-width:860px){.gq{grid-template-columns:minmax(0,1fr);gap:28px}.gq-points{margin:18px 0}}
 @media (max-width:560px){.gq-card{padding:22px 18px}.gq-row{grid-template-columns:minmax(0,1fr)}.gq-nav .gq-next{width:100%;justify-content:center}.gq-nav{flex-direction:column-reverse;align-items:stretch}.gq-back{text-align:center}.gq-chip span{font-size:14.5px;padding:10px 14px}}
 .gq-nav.gq-nav-center{flex-direction:column!important;align-items:center!important}.gq-nav-center .text-link{padding:8px}
+/* v12 related links */
+.v12-related{border-top:1px solid var(--line);padding-top:40px!important;padding-bottom:40px!important}
+.v12-related ul{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-wrap:wrap;gap:12px 28px}
+.v12-related a{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+.v12-related a:hover{color:var(--deep-gold)}

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://boozuka.com/</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://boozuka.com/services.html</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://boozuka.com/automation.html</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://boozuka.com/local.html</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://boozuka.com/coaching.html</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://boozuka.com/about.html</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://boozuka.com/contact.html</loc><lastmod>2026-10-20</lastmod></url>
-<url><loc>https://boozuka.com/pricing.html</loc><lastmod>2026-10-20</lastmod></url>  <url><loc>https://boozuka.com/get-quote.html</loc><lastmod>2026-10-21</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://boozuka.com/</loc><lastmod>2026-10-21</lastmod><priority>1.0</priority><xhtml:link rel="alternate" hreflang="en-IN" href="https://boozuka.com/"/></url>
+  <url><loc>https://boozuka.com/services.html</loc><lastmod>2026-10-21</lastmod><priority>0.9</priority><xhtml:link rel="alternate" hreflang="en-IN" href="https://boozuka.com/services.html"/></url>
+  <url><loc>https://boozuka.com/automation.html</loc><lastmod>2026-10-21</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en-IN" href="https://boozuka.com/automation.html"/></url>
+  <url><loc>https://boozuka.com/local.html</loc><lastmod>2026-10-21</lastmod><priority>0.9</priority><xhtml:link rel="alternate" hreflang="en-IN" href="https://boozuka.com/local.html"/></url>
+  <url><loc>https://boozuka.com/coaching.html</loc><lastmod>2026-10-21</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en-IN" href="https://boozuka.com/coaching.html"/></url>
+  <url><loc>https://boozuka.com/pricing.html</loc><lastmod>2026-10-21</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en-IN" href="https://boozuka.com/pricing.html"/></url>
+  <url><loc>https://boozuka.com/about.html</loc><lastmod>2026-10-21</lastmod><priority>0.6</priority><xhtml:link rel="alternate" hreflang="en-IN" href="https://boozuka.com/about.html"/></url>
+  <url><loc>https://boozuka.com/contact.html</loc><lastmod>2026-10-21</lastmod><priority>0.6</priority><xhtml:link rel="alternate" hreflang="en-IN" href="https://boozuka.com/contact.html"/></url>
+  <url><loc>https://boozuka.com/get-quote.html</loc><lastmod>2026-10-21</lastmod><priority>0.6</priority><xhtml:link rel="alternate" hreflang="en-IN" href="https://boozuka.com/get-quote.html"/></url>
 </urlset>

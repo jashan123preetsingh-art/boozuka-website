@@ -1,6 +1,6 @@
 # Boozuka
 
-> Boozuka is an AI automation and digital marketing agency based in Ludhiana, Punjab, India. It helps coaching and skill-training institutes and local businesses get more enquiries and reply to every one, using WhatsApp chatbots and AI automation, websites, Google SEO and Maps, ads and simple CRMs, all delivered by an in-house team. Boozuka was founded by Jashanpreet Singh, with co-founder Megha Walia.
+> Boozuka is an AI automation and digital marketing agency based in Ludhiana, Punjab, India. It is a digital growth partner for any business that wants to go online and grow, from shops, salons, cafes and clinics to service businesses and training institutes. It builds websites, runs Google SEO, Maps and ads, and sets up AI automation such as WhatsApp chatbots and simple CRMs, all delivered by an in-house team. Boozuka was founded by Jashanpreet Singh, with co-founder Megha Walia.
 
 ## Key facts
 - Name: Boozuka (also "Boozuka AI-Driven Growth")
@@ -16,14 +16,14 @@
 
 ## Services
 1. AI automation: WhatsApp chatbots and auto-replies, website chatbots, lead capture to CRM, follow-up and reminders, custom AI agents
-2. Website development for local businesses and institutes
+2. Website development for businesses of every kind
 3. Google SEO and Google Business Profile (Google Maps) optimisation
 4. Meta and Google ads
 5. CRM (Google Sheets) and custom software
 6. Video editing and reels
 
 ## Industries
-Coaching, IELTS and skill-training institutes (core niche); salons and spas; cafes and restaurants; clinics; gyms; shops and showrooms.
+Shops and showrooms; salons and spas; cafes and restaurants; clinics; gyms; service businesses; coaching and training institutes.
 
 ## Pricing
 Starting prices are listed at https://boozuka.com/pricing.html. Custom quotes after a free 20-minute audit.
@@ -95,7 +95,7 @@ Summary: Practical guides for local businesses in Ludhiana and Punjab on Google 
 ## Frequently asked questions
 
 **What is Boozuka?**
-Boozuka is an AI automation and digital marketing agency based in Ludhiana, Punjab, India. It helps coaching and skill-training institutes and local businesses get more enquiries and reply to every one, using WhatsApp chatbots and AI automation, websites, Google SEO and Maps, ads and simple CRMs, all delivered by an in-house team. Boozuka was founded by Jashanpreet Singh, with co-founder Megha Walia.
+Boozuka is an AI automation and digital marketing agency based in Ludhiana, Punjab, India. It is a digital growth partner for any business that wants to go online and grow, from shops, salons, cafes and clinics to service businesses and training institutes. It builds websites, runs Google SEO, Maps and ads, and sets up AI automation such as WhatsApp chatbots and simple CRMs, all delivered by an in-house team. Boozuka was founded by Jashanpreet Singh, with co-founder Megha Walia.
 
 **Who founded Boozuka?**
 Boozuka was founded by Jashanpreet Singh, who leads strategy and client relationships. Megha Walia is co-founder; she also owns Chahat Industries and leads business strategy and client relationships at Boozuka.
@@ -106,8 +106,8 @@ Boozuka is based in Ludhiana, Punjab, India, and works with businesses across Pu
 **What services does Boozuka offer?**
 AI automation (WhatsApp chatbots, website chatbots, lead capture to CRM and follow-up reminders), website development, Google SEO and Google Business Profile optimisation, Meta and Google ads, CRM and custom software, and video editing.
 
-**Does Boozuka work with coaching institutes?**
-Yes. Coaching, IELTS and skill-training institutes are a core focus: admission-focused websites, lead ads, WhatsApp follow-up and an admissions CRM.
+**Which businesses does Boozuka work with?**
+Any business that wants to grow online: shops and showrooms, salons and spas, cafes and restaurants, clinics, gyms, service businesses, and coaching or training institutes.
 
 **How do I get a quote from Boozuka?**
 Fill the 2-minute growth plan form at boozuka.com/get-quote.html or message +91 82890 94569 on WhatsApp. Starting prices are listed on the pricing page.

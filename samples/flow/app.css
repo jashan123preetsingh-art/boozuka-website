@@ -493,3 +493,5 @@ body{background:linear-gradient(180deg,#E9EAEE,#E4E6EA)!important;font-size:13px
 .th:hover{background:rgba(0,0,0,.03)}
 .tk{align-items:flex-start!important;text-align:left!important}
 .tl{display:none!important}@media(min-width:961px){.side .ws{min-height:52px;box-sizing:border-box;margin-top:0!important;padding-top:10px!important;padding-bottom:10px!important}}
+.src-note{margin:10px 0 0;font-size:11px;line-height:1.45;color:#6E6E73}.au-note{display:block;font-size:11px;color:#6E6E73;margin-top:2px}
+.t-src .tt td.n{padding-left:12px;width:auto}

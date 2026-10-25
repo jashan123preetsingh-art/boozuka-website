@@ -11,7 +11,7 @@
 .pz-tabs a:hover{border-color:var(--gold);background:rgba(201,169,110,.1)}
 .pz-pillar{background:var(--panel);border:1px solid var(--line);border-radius:20px;margin-bottom:20px;overflow:hidden;scroll-margin-top:96px}
 .pz-ph{display:flex;align-items:center;gap:20px;padding:24px 28px;border-bottom:1px solid var(--line)}
-.pz-no{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--ink);color:var(--gold);font:600 13px/1 ui-monospace,Menlo,monospace}
+.pz-no{flex:none}
 .pz-ph h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:30px;line-height:1;margin:0 0 4px}
 .pz-ph p{margin:0;color:#5B6170;font-size:14.5px}
 .pz-more{margin-left:auto;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;white-space:nowrap;border-bottom:1px solid var(--gold);padding-bottom:2px}
@@ -29,7 +29,7 @@
 .pv5-plan:not(.pv5-pop){background:var(--panel)}
 @media(max-width:900px){
 .pz{padding-top:56px}
-.pz-ph{flex-wrap:wrap;padding:20px}.pz-more{margin-left:64px}
+.pz-ph{flex-wrap:wrap;padding:20px}.pz-more{margin-left:0}
 .pz-row{grid-template-columns:1fr auto;gap:10px 16px;padding:18px 20px}
 .pz-s{grid-column:1/-1}.pz-t{align-self:end}.pz-p{align-self:end}
 .pz-p b{font-size:26px}

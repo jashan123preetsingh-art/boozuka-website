@@ -1094,3 +1094,10 @@ body.page-pricing{padding-bottom:84px}
 .sample-grid.sg8.v43-grid>.v43-show{grid-column:1/-1!important}
 @media(min-width:861px){.sg8.v43-grid .v43-show{display:grid!important;grid-template-columns:1.6fr 1fr;align-items:stretch}.sg8.v43-grid .v43-show .sc-vis{border-bottom:0;border-right:1px solid var(--line)}.sg8.v43-grid .v43-show figcaption{justify-content:center;padding:40px!important}.sg8.v43-grid .v43-show:nth-child(2){grid-template-columns:1fr 1.6fr}.sg8.v43-grid .v43-show:nth-child(2) .sc-vis{order:2;border-right:0;border-left:1px solid var(--line)}.sg8.v43-grid .v43-show .sample-badge{top:auto;bottom:14px}.sg8.v43-grid .v43-show:nth-child(1) .sample-badge{right:auto;left:14px}.sg8.v43-grid .v43-show figcaption{justify-content:center!important;gap:6px}.sg8.v43-grid .v43-show .sc-link{margin-top:22px!important}}
 .hero-assurance{margin-bottom:32px!important}
+/* v11 editorial numerals (unified) */
+html body .pz-no,html body .pl4-n,html body .pl4-grid li .pl4-n,html body .x27-n,html body .eyebrow-num{display:inline-flex;align-items:center;gap:12px;width:auto;height:auto;background:none;border-radius:0;padding:0;font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:400!important;font-style:normal;font-size:34px!important;line-height:1!important;letter-spacing:.01em!important;font-variant-numeric:lining-nums tabular-nums;font-feature-settings:"lnum" 1,"tnum" 1;color:#7A5F2E}
+html body .pz-no::after,html body .pl4-n::after,html body .x27-n::after{content:"";width:28px;height:1px;background:currentColor;opacity:.55}
+html body .pl4-grid li .pl4-n{color:#C9A96E!important}
+html body .x27-n{color:#d4b06a;margin-bottom:10px}
+html body .pz-no{color:#7A5F2E;font-size:40px!important;min-width:74px}
+@media(max-width:640px){html body .pz-no{font-size:34px!important;min-width:0}html body .pl4-n,html body .x27-n{font-size:30px!important}}

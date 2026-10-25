@@ -89,7 +89,7 @@
 .hx-ph img.in{opacity:1}
 .hx-hero2{position:relative;margin:0 12px;border-radius:12px;overflow:hidden;height:228px}
 .hx-hero2 .hx-ph{position:absolute;inset:0}
-.hx-ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px 18px 16px;background:linear-gradient(180deg,rgba(30,23,20,0) 30%,rgba(30,23,20,.72));color:#fff}
+.hx-ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px 18px 16px;background:linear-gradient(180deg,rgba(30,23,20,.1) 20%,rgba(30,23,20,.8));color:#fff}
 .hx-ov small{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#F0DDBE}
 .hx-ov h4{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:30px;line-height:1;margin:6px 0 12px;color:#fff;max-width:260px}
 .hx-ov h4 i{color:#F0C9A8}

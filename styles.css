@@ -968,3 +968,7 @@ body.page-pricing{padding-bottom:84px}
 @media(max-width:600px){.nav-dd{flex-wrap:wrap;justify-content:space-between}.nav-dd-tog{font-size:14px;padding:11px 8px}.nav-dd-panel{position:static;width:100%;min-width:0;display:none;opacity:1;visibility:visible;transform:none;margin:2px 0 8px;box-shadow:none}.nav-dd.open .nav-dd-panel{display:flex}.nav-dd.open .nav-dd-tog{transform:rotate(180deg)}}
 
 .pl4-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.pl4-grid li{border:1px solid var(--line);border-radius:12px;padding:22px;background:rgba(255,255,255,.5);display:flex;flex-direction:column;gap:8px;min-width:0}.pl4-n{font-size:12px;color:var(--deep-gold);letter-spacing:.12em}.pl4-grid b{font-size:22px;font-weight:600}.pl4-grid p{margin:0;color:var(--muted);font-size:15px;line-height:1.5;flex:1}.pl4-grid a{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold);align-self:flex-start}@media(max-width:1000px){.pl4-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.pl4-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* v39: small sizes use the B. mark only */
+.brand picture.bz-logo{display:block;line-height:0}
+@media(max-width:480px){.navigation .brand picture.bz-logo img{width:30px!important;height:31px!important}}

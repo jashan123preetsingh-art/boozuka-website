@@ -1,0 +1,39 @@
+/* Boozuka colour system v1 — one file. Brand core is shared everywhere;
+   each service page sets data-pal on <main class="sl"> to get its signature palette.
+   Tokens: --p-bg/--p-bg2 hero + end band (dark), --p-surface light section tint,
+   --p-accent accent on dark (AA >=4.5 on bg & bg2), --p-accent-ink accent on light (AA on surface & ivory),
+   --p-text text on dark. All pairs checked for WCAG AA. Gold CTA stays brand core. */
+:root{--bz-ivory:#FAF7F1;--bz-ivory-2:#F5F1E8;--bz-ink:#0B0F19;--bz-ink-2:#1B2236;--bz-gold:#C9A96E;--bz-gold-lt:#E2C48A;--bz-gold-deep:#8A6A35;--bz-mut:#5B6170}
+/* calm shared variant: city pages + blogs */
+.pal-calm{--p-bg:#0B0F19;--p-bg2:#1B2236;--p-surface:#F5F1E8;--p-accent:#C9A96E;--p-accent-ink:#7A5F2E;--p-text:#F5F1E8}
+
+.sl[data-pal="website-development-ludhiana"]{--p-bg:#0E1A2B;--p-bg2:#1B2F4A;--p-surface:#EEF2F7;--p-accent:#7FB2F0;--p-accent-ink:#1F4E8C;--p-text:#F5F1E8} /* Websites */
+.sl[data-pal="web-app-development-punjab"]{--p-bg:#14122B;--p-bg2:#29244F;--p-surface:#F0EEF8;--p-accent:#A99CF5;--p-accent-ink:#4B3BB0;--p-text:#F5F1E8} /* Apps */
+.sl[data-pal="shopify-ecommerce-website-ludhiana"]{--p-bg:#0F2420;--p-bg2:#1C3F37;--p-surface:#ECF4F1;--p-accent:#6FD3B0;--p-accent-ink:#16624D;--p-text:#F5F1E8} /* E-commerce */
+.sl[data-pal="crm-software-development"]{--p-bg:#101C24;--p-bg2:#1E3442;--p-surface:#EDF3F6;--p-accent:#7CC6E0;--p-accent-ink:#1B5C75;--p-text:#F5F1E8} /* CRM */
+.sl[data-pal="ui-ux-design-agency-punjab"]{--p-bg:#1A1430;--p-bg2:#33285A;--p-surface:#F3EFF9;--p-accent:#C3A6F7;--p-accent-ink:#5B3A9E;--p-text:#F5F1E8} /* UI/UX */
+.sl[data-pal="branding-agency-ludhiana"]{--p-bg:#1E1410;--p-bg2:#3B271E;--p-surface:#F6EFEA;--p-accent:#E6A57E;--p-accent-ink:#8A4523;--p-text:#F5F1E8} /* Branding */
+.sl[data-pal="graphics-content-design"]{--p-bg:#24101A;--p-bg2:#45202F;--p-surface:#F8EEF2;--p-accent:#F09AB8;--p-accent-ink:#972E57;--p-text:#F5F1E8} /* Graphics */
+.sl[data-pal="tshirt-merch-design-ludhiana"]{--p-bg:#1A1A12;--p-bg2:#34331F;--p-surface:#F3F2EA;--p-accent:#D9CF7A;--p-accent-ink:#6B6420;--p-text:#F5F1E8} /* Merch */
+.sl[data-pal="ai-chatbot-for-business"]{--p-bg:#0D2016;--p-bg2:#18402B;--p-surface:#ECF5EF;--p-accent:#72D69A;--p-accent-ink:#1A6B3C;--p-text:#F5F1E8} /* AI chatbots */
+.sl[data-pal="ai-voice-agents"]{--p-bg:#0F1630;--p-bg2:#1E2B5C;--p-surface:#EEF0FA;--p-accent:#8FA4FF;--p-accent-ink:#3048B0;--p-text:#F5F1E8} /* Voice agents */
+.sl[data-pal="ai-automation-agency"]{--p-bg:#1F160C;--p-bg2:#3D2B15;--p-surface:#F7F1E8;--p-accent:#F0B865;--p-accent-ink:#8A5411;--p-text:#F5F1E8} /* Automation */
+.sl[data-pal="ads-management-punjab"]{--p-bg:#25110F;--p-bg2:#47201B;--p-surface:#F9EEEC;--p-accent:#F59A85;--p-accent-ink:#A33A26;--p-text:#F5F1E8} /* Ads */
+.sl[data-pal="seo-services-punjab"]{--p-bg:#0E1F22;--p-bg2:#1A3C40;--p-surface:#ECF4F4;--p-accent:#6CCFD6;--p-accent-ink:#17646B;--p-text:#F5F1E8} /* SEO */
+.sl[data-pal="social-media-management"]{--p-bg:#231024;--p-bg2:#432046;--p-surface:#F7EEF7;--p-accent:#E69AE6;--p-accent-ink:#8C2F8C;--p-text:#F5F1E8} /* Social */
+.sl[data-pal="whatsapp-email-marketing-reviews"]{--p-bg:#102218;--p-bg2:#1E3F2C;--p-surface:#EEF5F0;--p-accent:#9BDC8C;--p-accent-ink:#2F6B22;--p-text:#F5F1E8} /* Messaging */
+.sl[data-pal="ai-services"]{--p-bg:#0B0F19;--p-bg2:#1B2236;--p-surface:#F3EEE4;--p-accent:#E2C48A;--p-accent-ink:#7A5F2E;--p-text:#F5F1E8} /* AI Services */
+
+.sl[data-pal] .sl-hero{background:radial-gradient(1200px 500px at 75% 30%,var(--p-bg2) 0,var(--p-bg) 62%)}
+.sl[data-pal] .sl-alt{background:var(--p-surface)}
+.sl[data-pal] .sl-end{background:linear-gradient(160deg,var(--p-bg),var(--p-bg2))}
+.sl[data-pal] h1 em,.sl[data-pal] .sl-hero h2 em,.sl[data-pal] .sl-end h2 em{color:var(--p-accent)!important}
+.sl[data-pal] .sl-sec h2 em{color:var(--p-accent-ink)!important}
+.sl[data-pal] .sl-sec .sl-get span,.sl[data-pal] .sl-sec .sl-steps span,.sl[data-pal] .sl-sec .sl-rel small{color:var(--p-accent-ink)}
+.sl[data-pal] .sl-hero [class*=eyebrow],.sl[data-pal] .sl-ey{color:var(--p-accent)}
+.sl[data-pal] .m-li.g{box-shadow:inset 3px 0 0 var(--p-accent)}
+.sl[data-pal] .m-wave i,.sl[data-pal] .m-flow>i,.sl[data-pal] .m-sw i:nth-child(2),.sl[data-pal] .m-map i:nth-child(2){background:var(--p-accent)}
+.sl[data-pal] .m-bars i{background:linear-gradient(var(--p-accent),var(--p-accent-ink))}
+.sl[data-pal] .m-box,.sl[data-pal] .sm-av{background:linear-gradient(135deg,var(--p-accent),var(--p-accent-ink))}
+.sl[data-pal] .m-grid3 em,.sl[data-pal] .m-rv em,.sl[data-pal] .sm-b em,.sl[data-pal] .m-logo em{color:var(--p-accent)}
+.sl[data-pal] .m-res.on,.sl[data-pal] .m-chips .on{border-color:var(--p-accent)}

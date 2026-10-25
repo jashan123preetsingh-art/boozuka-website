@@ -70,7 +70,7 @@
 @keyframes slw{to{transform:scaleY(.4)}}
 .m-flow{display:grid;gap:0;width:300px}.m-flow .n{padding:16px 18px;border-radius:12px;background:#F5F1E8;color:#0B0F19;font-weight:600;box-shadow:0 20px 40px -24px rgba(0,0,0,.8)}.m-flow .n.g{background:linear-gradient(180deg,#E2C48A,#B8935A);color:#1a1307}.m-flow>i{width:1px;height:26px;margin-left:28px;background:#C9A96E}
 .m-ads{display:grid;gap:10px}.m-bars{display:flex;align-items:flex-end;gap:10px;height:120px;padding:10px;border-radius:10px;background:#fff;border:.5px solid rgba(0,0,0,.1)}.m-bars i{flex:1;border-radius:4px 4px 0 0;background:linear-gradient(#E2C48A,#B8935A)}
-.m-camp{display:flex;justify-content:space-between;padding:10px;border-radius:8px;background:#fff;border:.5px solid rgba(0,0,0,.1)}.m-camp s{text-decoration:none;color:#1F7A3A;font-weight:600;font-size:11px}.m-demo{margin:8px 0 0;font-size:10px;color:#8e8e93;text-align:right}
+.m-camp{display:flex;justify-content:space-between;padding:10px;border-radius:8px;background:#fff;border:.5px solid rgba(0,0,0,.1)}.m-camp s{text-decoration:none;color:#1F7A3A;font-weight:600;font-size:11px}.m-demo{margin:8px 0 0;font-size:10px;color:#6B6B70;text-align:right}
 .m-seo{display:grid;gap:10px}.m-q{padding:10px 16px;border-radius:99px;border:.5px solid rgba(0,0,0,.2);box-shadow:0 2px 6px rgba(0,0,0,.06)}.m-map{position:relative;height:110px;border-radius:10px;background:linear-gradient(135deg,#EAF0E6 25%,#E0D8C6 25% 27%,#EAF0E6 27% 60%,#DDE5EE 60% 62%,#EAF0E6 62%)}.m-map i{position:absolute;width:14px;height:14px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#8e8e93;left:20%;top:40%}.m-map i:nth-child(2){left:50%;top:25%;width:20px;height:20px;background:#C9A96E}.m-map i:nth-child(3){left:75%;top:55%}
 .m-res{padding:10px;border-radius:8px;background:#fff;border:.5px solid rgba(0,0,0,.1)}.m-res.on{border-color:#C9A96E;box-shadow:0 0 0 2px rgba(201,169,110,.25)}.m-res small{display:block;color:#1F7A3A}
 .m-reel{display:grid;gap:8px;margin:-14px}.m-rv{height:290px;border-radius:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.7)),url(/assets/samples/x-salon-bridal-s.webp) center/cover,#5B4330;display:flex;align-items:flex-end;padding:16px;color:#fff}.m-rv b{font:500 24px/1.05 'Cormorant Garamond',serif}.m-rv em{color:#E2C48A}.m-rb{display:flex;justify-content:space-between;padding:6px 14px 14px;font-size:11px}
@@ -83,3 +83,5 @@
 .m-btn{background:#13803D}
 .sl-sec h2 em{color:#8A6A35!important}.sl-sec .sl-get span,.sl-sec .sl-steps span,.sl-sec .sl-rel small{color:#8A6A35}
 .sl-crumb a,.sl-crumb span{color:#AEB3BF}.sl-note{color:#A3A9B6}
+.sl-hero .sl-in>*{min-width:0}.sl-copy h1{overflow-wrap:break-word}
+@media (max-width:480px){.sl-cta{max-width:100%;white-space:normal}.sl-hero h1{font-size:clamp(34px,10vw,44px)}}

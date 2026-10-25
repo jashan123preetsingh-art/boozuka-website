@@ -37,3 +37,30 @@
 .sl[data-pal] .m-box,.sl[data-pal] .sm-av{background:linear-gradient(135deg,var(--p-accent),var(--p-accent-ink))}
 .sl[data-pal] .m-grid3 em,.sl[data-pal] .m-rv em,.sl[data-pal] .sm-b em,.sl[data-pal] .m-logo em{color:var(--p-accent)}
 .sl[data-pal] .m-res.on,.sl[data-pal] .m-chips .on{border-color:var(--p-accent)}
+
+/* calm variant applied: city pages + blog articles (article.ar.pal-calm) */
+.pal-calm .ar-head{background:var(--p-surface);box-shadow:0 0 0 100vmax var(--p-surface);clip-path:inset(0 -100vmax);border-bottom:1px solid rgba(138,106,53,.22)}
+.pal-calm .ar-head .eyebrow{color:var(--p-accent-ink)!important}
+.pal-calm .ar-head h1 em{color:var(--p-accent-ink)}
+.pal-calm .ar-sum{border-left-color:var(--p-accent)}
+.pal-calm .ar-cta{background:var(--p-surface);border-color:rgba(138,106,53,.25);border-top:2px solid var(--p-accent)}
+.pal-calm .ar-cta .eyebrow{color:var(--p-accent-ink)}
+
+/* Hero layouts per service group (desktop). build = split (default) */
+@media (min-width:961px){
+/* design: centred editorial, visual below */
+.sl[data-grp=design] .sl-hero .sl-in{grid-template-columns:1fr;justify-items:center;text-align:center;gap:56px}
+.sl[data-grp=design] .sl-copy{max-width:780px}
+.sl[data-grp=design] .sl-crumb{justify-content:center}
+.sl[data-grp=design] .sl-hero h1{font-size:clamp(56px,5.4vw,80px)}
+.sl[data-grp=design] .sl-mock{min-height:0}
+/* automate: visual first, copy right */
+.sl[data-grp=automate] .sl-hero .sl-in{grid-template-columns:1fr 1.05fr}
+.sl[data-grp=automate] .sl-mock{order:-1}
+/* grow: copy left with hairline, visual on a framed tinted panel */
+.sl[data-grp=grow] .sl-hero .sl-in{grid-template-columns:1fr 1.1fr}
+.sl[data-grp=grow] .sl-eye{display:flex;align-items:center;gap:14px}
+.sl[data-grp=grow] .sl-eye:after{content:"";width:64px;height:1px;background:var(--p-accent);opacity:.7}
+.sl[data-grp=grow] .sl-mock{background:linear-gradient(160deg,var(--p-bg2),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:28px;padding:48px 40px}
+}
+@media (min-width:961px){.sl[data-grp=design] .sl-hero{padding-top:96px}.sl[data-grp=design] .sl-hero .sl-in{gap:44px}}

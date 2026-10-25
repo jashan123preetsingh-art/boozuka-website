@@ -1,5 +1,5 @@
 /* Boozuka meeting booking — change the link ONLY here */
-window.BOOZUKA_CAL_LINK = 'boozuka-3tmqaf/30min';
+window.BOOZUKA_CAL_LINK = 'boozuka/30min';
 (function(){
   var LINK=window.BOOZUKA_CAL_LINK, NS='30min', URL='https://cal.com/'+LINK, CFG={layout:'month_view',theme:'light'};
   var UI={theme:'light',cssVarsPerTheme:{light:{'cal-brand':'#0B0F19'},dark:{'cal-brand':'#C9A96E'}},hideEventTypeDetails:false,layout:'month_view'};

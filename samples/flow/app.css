@@ -492,3 +492,4 @@ body{background:linear-gradient(180deg,#E9EAEE,#E4E6EA)!important;font-size:13px
 .th.on{background:rgba(0,122,255,.1)!important;box-shadow:none!important}.th.on:before{display:none!important}
 .th:hover{background:rgba(0,0,0,.03)}
 .tk{align-items:flex-start!important;text-align:left!important}
+.tl{display:none!important}@media(min-width:961px){.side .ws{min-height:52px;box-sizing:border-box;margin-top:0!important;padding-top:10px!important;padding-bottom:10px!important}}

@@ -94,3 +94,14 @@
 .pv-res{background:#fff;border-radius:14px;padding:14px 16px;box-shadow:0 24px 48px -24px rgba(11,15,25,.45),0 0 0 1px rgba(11,15,25,.06);font:500 12px/1.45 Manrope,sans-serif;color:#0B0F19}
 .pv-res b{display:block;font:600 15px Manrope,sans-serif}.pv-res .gr{color:#13803D}.pv-res .row{display:flex;gap:6px;margin-top:10px}.pv-res .row span{flex:1;text-align:center;border:1px solid rgba(11,15,25,.14);border-radius:99px;padding:5px 0;font-weight:600}
 .pv-search{position:absolute;left:4%;top:5%;width:70%;background:#fff;border-radius:99px;padding:9px 14px;font:500 12px Manrope,sans-serif;color:#3a3f4b;box-shadow:0 6px 18px -8px rgba(0,0,0,.25)}
+
+.pal-calm[data-city="amritsar"]{--p-surface:#F6EEDF;--p-accent-ink:#8A5A12;--p-accent:#D9A441}
+.pal-calm[data-city="bathinda"]{--p-surface:#EEF3EC;--p-accent-ink:#2F5D3A;--p-accent:#6FA37B}
+.pal-calm[data-city="chandigarh-mohali"]{--p-surface:#ECF0F6;--p-accent-ink:#2D4A7A;--p-accent:#7C9BD1}
+.pal-calm[data-city="jalandhar"]{--p-surface:#F5ECEA;--p-accent-ink:#8A3A2E;--p-accent:#D98572}
+.pal-calm[data-city="ludhiana"]{--p-surface:#F5F1E8;--p-accent-ink:#7A5F2E;--p-accent:#C9A96E}
+.pal-calm[data-city="mohali"]{--p-surface:#EAF2F3;--p-accent-ink:#1F5C63;--p-accent:#62AAB2}
+.pal-calm[data-city="patiala"]{--p-surface:#F1EDF5;--p-accent-ink:#5B3F7E;--p-accent:#A28AC6}
+.pal-calm[data-city="punjab"]{--p-surface:#F3F0E6;--p-accent-ink:#5E5A1F;--p-accent:#B5AD52}
+.pal-calm[data-city] .ar-head h1 em{font-style:italic}.pal-calm[data-city] .pv-map .pin,.pal-calm[data-city] .pi-vis .pin{background:var(--p-accent)}
+.pal-calm[data-city] .ar-head h1 em{font-style:italic!important;color:var(--p-accent-ink)!important}

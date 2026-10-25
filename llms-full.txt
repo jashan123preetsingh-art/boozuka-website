@@ -26,7 +26,7 @@
 Shops and showrooms; salons and spas; cafes and restaurants; clinics; gyms; service businesses; coaching and training institutes.
 
 ## Pricing
-Starting prices are listed at https://boozuka.com/pricing. Custom quotes after a free 20-minute audit.
+Starting prices are listed at https://boozuka.com/pricing. Custom quotes after a free 30-minute audit.
 
 ## Key pages
 - [Home](https://boozuka.com/)
@@ -45,7 +45,7 @@ Starting prices are listed at https://boozuka.com/pricing. Custom quotes after a
 ### Home
 URL: https://boozuka.com/
 Headline: Websites that bring enquiries. Systems that follow them up.
-Summary: Boozuka is a digital marketing agency in Ludhiana: websites, Google SEO, ads and WhatsApp follow-up for local businesses in Punjab. Book a free Growth Audit.
+Summary: Boozuka is a digital marketing agency in Ludhiana: websites, Google SEO, ads and WhatsApp follow-up for local businesses in Punjab. Book a free 30-min call.
 
 ### Services
 URL: https://boozuka.com/services
@@ -80,7 +80,7 @@ Summary: Meet Boozuka, a Ludhiana-based in-house team for websites, ads, SEO and
 ### Contact
 URL: https://boozuka.com/contact
 Headline: Tell us about your business
-Summary: Contact Boozuka in Ludhiana on WhatsApp, phone or email. Tell us about your business and book a free 20-minute Growth Audit with our in-house team.
+Summary: Contact Boozuka in Ludhiana on WhatsApp, phone or email. Tell us about your business and book a free 30-minute call with our in-house team.
 
 ### Get a custom growth plan
 URL: https://boozuka.com/get-quote

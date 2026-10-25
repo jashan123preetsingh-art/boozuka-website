@@ -1,0 +1,25 @@
+.nav-cal{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 16px;border-radius:12px;border:1.5px solid rgba(11,15,25,.16);background:#fff;color:#0B0F19!important;font-weight:700;font-size:15px;white-space:nowrap;transition:transform .2s,border-color .2s,box-shadow .2s}
+.nav-cal:hover{transform:translateY(-2px);border-color:#C9A96E;box-shadow:0 8px 20px rgba(11,15,25,.1)}
+.nav-cal svg,[data-book-call] svg{width:18px;height:18px;flex-shrink:0}
+@media(max-width:1180px){.nav-cal span{display:none}.nav-cal{width:46px;padding:0;justify-content:center}}
+@media(max-width:600px){.nav-cta .nav-cal{display:none}}
+.nav-mcta .c{background:#fff!important;color:#0B0F19!important;border:1.5px solid rgba(11,15,25,.16)!important}
+.sf-brand .sf-cal{margin-top:10px;background:transparent;color:#FAF8F3;border:1px solid #ffffff40;display:inline-flex;gap:10px}
+.sf-brand .sf-cal:hover{border-color:#C9A96E;color:#C9A96E}
+.pv38-sticky-cal{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:5px;background:#fff;color:#0B0F19;border:1px solid #E4E0D6;font-size:13px;font-weight:700;white-space:nowrap}
+.gq-cal-btn{margin-top:12px;width:100%;height:54px;border-radius:16px;background:#0B0F19;color:#fff!important;font-weight:750;font-size:16px;display:flex;align-items:center;justify-content:center;gap:10px}
+.gq-cal-btn svg{color:#C9A96E}
+.cal-card{padding-top:20px}
+.cal-card-in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px;align-items:start;background:#0B0F19;color:#FAF8F3;border-radius:24px;padding:44px;box-shadow:0 30px 70px rgba(11,15,25,.18)}
+.cal-card h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(36px,4vw,54px)!important;line-height:1.02;margin:12px 0 16px;color:#FAF8F3}
+.cal-card p{color:#CFD3DC;font-size:15px;line-height:1.8}
+.cal-card .eyebrow{color:#C9A96E}
+.cal-card-actions{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-top:22px}
+.cal-card-actions .button{gap:10px;font-size:14px}
+.cal-card-actions .text-link{color:#C9A96E;font-size:13px}
+.cal-inline-wrap{background:#fff;border-radius:18px;min-height:560px;overflow:hidden}
+#cal-inline{width:100%;min-height:560px;overflow:auto}
+.cal-ph{color:#6B7280!important;text-align:center;padding:240px 20px}
+.cal-ph a{color:#A8884F;text-decoration:underline}
+#cal-inline.loaded .cal-ph{display:none}
+@media(max-width:860px){.cal-card-in{grid-template-columns:1fr;padding:24px 16px;border-radius:18px;gap:20px}.cal-card-copy{padding:0 6px}}

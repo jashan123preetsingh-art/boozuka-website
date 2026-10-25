@@ -2,6 +2,12 @@
 
 > Boozuka is a tech, design and AI studio based in Ludhiana, Punjab, India. One in-house team builds websites, web apps and custom software, designs brands and interfaces (UI/UX, logo and branding, creatives), sets up AI agents, chatbots and automation, and runs SEO, social media, ads and video for businesses in Punjab and across India. Boozuka was founded by Jashanpreet Singh, with co-founder Megha Walia.
 
+## New services (v41)
+- Ads management (Meta, Google, YouTube), monthly: https://boozuka.com/ads-management-punjab
+- T-shirt, merch and packaging design: https://boozuka.com/tshirt-merch-design-ludhiana
+- Shopify and e-commerce stores: https://boozuka.com/shopify-ecommerce-website-ludhiana
+- Full grouped service list (Build, Design, Automate, Grow): https://boozuka.com/services#all-services
+
 ## Key facts
 - Name: Boozuka (also "Boozuka Studio")
 - Type: Tech, Design & AI Studio (technology services company)

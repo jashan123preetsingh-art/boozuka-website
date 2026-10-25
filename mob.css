@@ -1,0 +1,66 @@
+/* Boozuka mobile layer: loads last on every page */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+img,video,svg{max-width:100%}
+img{height:auto}
+.mbar{display:none}
+@media(max-width:768px){
+html,body{overflow-x:clip}
+h1,h2,h3{text-wrap:balance}
+main p,main li{text-wrap:pretty}
+/* readable body copy */
+main p:not(figure *):not([aria-hidden=true] *):not([class*=note]):not([class*=fine]):not([class*=gst]):not([class*=eyebrow]):not([class*=-n]):not([class*=pn]):not([class*=formula]),main li:not(figure *):not([aria-hidden=true] *){font-size:max(16px,1em)}
+main .sv2-val,main .sv2-dd p,main .sl-sec p,main .ar p,main .ar li{font-size:16px!important;line-height:1.6}
+main [class*=note],main [class*=fine],main [class*=gst],main .hc-note,main .sl-pn,main .xb-n{font-size:14px!important;line-height:1.5;color:#4A505E}
+main .eyebrow{font-size:13px!important;letter-spacing:.14em}
+/* calmer vertical rhythm */
+main :is(.section,.pl4,.oc,.sample-work,.workflow-section,.mc,.price-teaser,.faq-section,.closing-cta,.sl-sec,.about-what,.about-how,.team,.founder-block,.approach,.xb,.services,.engagement,.crm-offer){padding-top:52px!important;padding-bottom:52px!important}
+main :is(.sl-end,.xb-end){padding-top:60px!important;padding-bottom:60px!important}
+main>section[class*=hero],main>section.page-intro{padding-top:32px!important;padding-bottom:40px!important}
+main .section-intro{margin-bottom:24px!important}
+/* tap targets */
+main a.text-link,main .sl-link,main .sl-cost,main .p2-lnk,main .sv2-link,main .sv2-btn,main [class*=-wa]:not(svg),main .pv10-wa,main .xb-links a,main .sl-alt-links a,main .v42-sub a,main .p2-tab{min-height:44px;display:inline-flex;align-items:center}
+main nav[aria-label*=read] a,main .crumbs a,main ol[class*=crumb] a{display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
+main summary{min-height:48px;padding-top:12px;padding-bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer}
+main .button,main .btn,main [class*=cta] a,main a[class*=btn]{min-height:48px}
+footer a{display:inline-flex;align-items:center;min-height:44px}
+footer li{margin:0!important}
+main .xb-a,main a[href*=unsplash],main a[href^="tel:"],main a[href^="mailto:"],main a[href*="wa.me"]{display:inline-flex;align-items:center;min-height:44px}
+main a[href*=unsplash]{font-size:13px}
+main a[href^="/samples/"]{display:inline-flex;align-items:center;min-height:44px}
+main dd,main .sv2-meta dd,main td{font-size:15px!important;line-height:1.5}
+main .p2-plans li,main [class*=plan] li{font-size:15px!important}
+main a:has(>span[aria-hidden]):not(.button){min-height:44px}
+/* forms: no zoom on focus */
+input,select,textarea{font-size:16px!important}
+input[type=text],input[type=email],input[type=tel],input[type=url],input[type=number],select,textarea{min-height:48px}
+/* swipeable service rows */
+.v42-grid{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px!important;margin:0 -20px;padding:4px 20px 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.v42-grid::-webkit-scrollbar{display:none}
+.v42-grid>*{flex:0 0 86%;scroll-snap-align:center;min-width:0}
+.v42-ph:after{content:"Swipe \2192";display:block;margin-top:6px;font:600 13px/1 Manrope,sans-serif;color:#A8884F;letter-spacing:.04em}
+.v42-sub{position:sticky;top:68px;z-index:5;background:#FAF8F3;overflow-x:auto;flex-wrap:nowrap!important;white-space:nowrap;scrollbar-width:none}
+/* full-height menu, smooth */
+.navigation nav.open{animation:mOpen .26s cubic-bezier(.2,.8,.2,1);overscroll-behavior:contain;padding-bottom:calc(24px + env(safe-area-inset-bottom))!important}
+@keyframes mOpen{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+/* sticky action bar */
+.pv6-sticky{display:none!important}
+.mbar{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:70;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(11,15,25,.97);border-top:1px solid #C9A96E;box-shadow:0 -10px 28px -16px rgba(11,15,25,.7);transition:transform .25s ease}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:7px;min-height:48px;border-radius:12px;font:700 15px/1 Manrope,system-ui,sans-serif;text-decoration:none!important;color:#fff!important;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04)}
+.mbar a svg{width:18px;height:18px;flex:none}
+.mbar .mb-wa svg{color:#25D366}
+.mbar .mb-book{background:#C9A96E;color:#0B0F19!important;border-color:#C9A96E}
+.mbar.hide,body.nav-open .mbar{transform:translateY(110%)}
+body.has-mbar{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+body.has-mbar footer{padding-bottom:16px}
+}
+@media(max-width:360px){.mbar a{font-size:14px;gap:5px}.mbar a svg{width:16px;height:16px}}
+@media(max-width:768px){
+/* home hero journey: swipe instead of a 1,800px stack */
+.hero .hx-st{display:flex!important;flex-direction:row!important;align-items:center;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:6px 20px 10px;scrollbar-width:none;height:auto!important}
+.hero .hx-st::-webkit-scrollbar{display:none}
+.hero .hx-st>*{position:relative!important;inset:auto!important;transform:none!important;flex:0 0 84%;margin:0!important;scroll-snap-align:center;max-width:none!important;width:auto!important}
+.hero .hx-st>.xp-wrap{flex-basis:62%}
+.hero .hx-st>.xp-wrap .xp{width:100%!important}
+.hero figure.hx{height:auto!important;min-height:0!important}
+.hero figure.hx:after{content:"Swipe to see the full journey \2192";display:block;text-align:center;margin-top:6px;font:600 13px/1.4 Manrope,sans-serif;color:#C9A96E}
+}

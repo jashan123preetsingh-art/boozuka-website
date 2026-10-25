@@ -6,3 +6,6 @@ var vh=innerHeight,els=[].slice.call(d.querySelectorAll(sel)).filter(function(e)
 els.forEach(function(e){e.classList.add('pg-rv');e.style.setProperty('--d',Math.min([].indexOf.call(e.parentNode.children,e),4)*70+'ms')});
 var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('pg-in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});
 els.forEach(function(e){io.observe(e)});})();
+(function(){var f=document.querySelector('#faq');if(!f||innerWidth>760)return;var ds=f.querySelectorAll('details');if(ds.length<7)return;
+for(var i=5;i<ds.length;i++)ds[i].hidden=true;var b=document.createElement('button');b.type='button';b.className='pz-tog faq-more';b.textContent='Show all '+ds.length+' questions';
+b.onclick=function(){for(var i=5;i<ds.length;i++)ds[i].hidden=false;b.remove()};ds[ds.length-1].parentNode.appendChild(b)})();

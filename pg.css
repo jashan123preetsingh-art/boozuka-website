@@ -34,7 +34,7 @@
 /* city layouts (desktop) */
 @media(min-width:961px){
 [data-city=amritsar] .ar-head.has-vis{grid-template-columns:1fr;text-align:center;justify-items:center}
-[data-city=amritsar] .ar-head.has-vis .pi-vis{max-width:640px;width:100%;margin-top:40px}
+[data-city=amritsar] .ar-head.has-vis .pi-vis{max-width:640px;width:100%;margin:40px auto 0;grid-column:1/-1;grid-row:auto;position:relative;text-align:left}
 [data-city=bathinda] .ar-head.has-vis{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}[data-city=bathinda] .ar-head .pi-vis{order:-1}
 [data-city=chandigarh-mohali] .ar-layout{grid-template-columns:minmax(0,1fr) 240px}[data-city=chandigarh-mohali] .ar-toc{order:2}
 [data-city=jalandhar] .ar-head{background:#1E1513!important;box-shadow:0 0 0 100vmax #1E1513!important;color:#F5ECEA}
@@ -80,3 +80,6 @@
 .fd-sw{position:absolute;left:8%;top:60%;display:flex;gap:8px}.fd-sw span{width:44px;height:44px;border-radius:10px;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
 .fd-ty{position:absolute;right:8%;bottom:17%;background:#F6F1EA;border-radius:12px;padding:12px 16px;display:flex;gap:12px;align-items:center}.fd-ty b{font:500 40px/1 'Cormorant Garamond',serif;color:#2B1E18}.fd-ty small{font-size:10.5px;color:#4B5160;line-height:1.4}
 .xg .v15-card{min-width:0}.xm3{min-width:0;overflow:hidden}
+.xm3{grid-template-columns:1fr 1fr;grid-template-rows:1.15fr 1fr;aspect-ratio:1/1}
+.xm3 img:first-child{grid-row:auto;grid-column:span 2}
+@media(max-width:760px){.faq-more{margin-top:14px}.pv5-steps p{display:none}}

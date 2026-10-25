@@ -1088,3 +1088,6 @@ body.page-pricing{padding-bottom:84px}
 .pl4-grid li:before{opacity:.6}
 .hero{overflow-x:clip}.hero:before{filter:none;will-change:transform}
 .v42-mq{max-width:100vw;contain:paint}
+/* v42.5 perf: hold infinite decorative animations until after load */
+html:not(.anim-go) .marquee-track,html:not(.anim-go) .v17-mq-in,html:not(.anim-go) .gx-scr img,html:not(.anim-go) .gx-phone,html:not(.anim-go) .gx-chip,html:not(.anim-go) .hero:before,html:not(.anim-go) .v42-mq-t{animation-play-state:paused}
+.v42-mq,.v17-mq,.gx-phone{contain:layout paint}

@@ -1,0 +1,48 @@
+.gc{padding:72px 20px;background:#FAF8F3}
+.gc-in{max-width:1180px;margin:0 auto;background:radial-gradient(120% 80% at 100% 0,rgba(201,169,110,.16),transparent 60%),#0B0F19;color:#F4EFE6;border-radius:28px;padding:48px;border:1px solid rgba(201,169,110,.28);box-shadow:0 40px 80px -40px rgba(11,15,25,.55)}
+.gc-head{max-width:640px;margin-bottom:32px}
+.gc-eb{font:700 12px/1 Manrope,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#C9A96E;margin:0 0 14px}
+.gc-head h2{font-family:"Cormorant Garamond",Cormorant,Georgia,serif;font-weight:500;font-size:clamp(32px,4.2vw,50px);line-height:1.05;margin:0 0 12px;color:#fff;text-wrap:balance}
+.gc-head h2 em{color:#C9A96E}
+.gc-head p{margin:0;color:rgba(244,239,230,.72);font-size:16px;line-height:1.6}
+.gc-box{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;align-items:stretch}
+.gc-fields{display:grid;gap:22px}
+.gc-l{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-bottom:8px}
+.gc-l label{font:600 15px/1.35 Manrope,sans-serif;color:#fff}
+.gc-l small{font:600 11px/1 Manrope,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(201,169,110,.85);white-space:nowrap}
+.gc-row{display:flex;align-items:center;gap:14px}
+.gc-row i{font-style:normal;color:rgba(244,239,230,.6);margin-left:-8px}
+.gc input[type=number]{width:112px;flex:none;height:48px;border-radius:12px;border:1px solid rgba(201,169,110,.35);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope,sans-serif;padding:0 12px;text-align:right}
+.gc input[type=number]:focus{outline:2px solid #C9A96E;outline-offset:1px}
+.gc input[type=range]{-webkit-appearance:none;appearance:none;flex:1;min-width:0;height:48px;background:transparent;--p:30%;cursor:pointer}
+.gc input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:6px;background:linear-gradient(90deg,#C9A96E var(--p),rgba(255,255,255,.14) var(--p))}
+.gc input[type=range]::-moz-range-track{height:6px;border-radius:6px;background:linear-gradient(90deg,#C9A96E var(--p),rgba(255,255,255,.14) var(--p))}
+.gc input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;margin-top:-9px;border-radius:50%;background:#F4EFE6;border:3px solid #C9A96E;box-shadow:0 0 0 6px rgba(201,169,110,.18)}
+.gc input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#F4EFE6;border:3px solid #C9A96E}
+.gc input[type=range]:focus-visible{outline:2px solid #C9A96E;outline-offset:2px;border-radius:8px}
+.gc-res{position:relative;border-radius:22px;padding:30px;background:linear-gradient(160deg,rgba(201,169,110,.16),rgba(201,169,110,.04));border:1px solid rgba(201,169,110,.45);box-shadow:0 0 60px -12px rgba(201,169,110,.45),inset 0 1px 0 rgba(255,255,255,.08);display:flex;flex-direction:column}
+.gc-k{font:700 12px/1 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#C9A96E;margin:0 0 14px}
+.gc-n{font:500 clamp(56px,7vw,84px)/.95 "Cormorant Garamond",Georgia,serif;color:#fff;margin:0;font-variant-numeric:lining-nums tabular-nums}
+.gc-n small{font:600 18px Manrope,sans-serif;color:rgba(244,239,230,.75)}
+.gc-v{font:500 clamp(30px,3.6vw,42px)/1.1 "Cormorant Garamond",Georgia,serif;color:#C9A96E;margin:6px 0 14px}
+.gc-m{font:500 13px/1.5 Manrope,sans-serif;color:rgba(244,239,230,.62);margin:0 0 14px}
+.gc-note{font-size:13px;line-height:1.55;color:rgba(244,239,230,.66);margin:0 0 20px}
+.gc-note b{color:#fff}
+.gc-cta{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-top:18px;border-top:1px solid rgba(201,169,110,.25)}
+.gc-cta p{flex:1 0 100%;margin:0 0 4px;font:600 15px Manrope,sans-serif;color:#fff}
+.gc-cta a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:12px;font:700 15px Manrope,sans-serif;text-decoration:none}
+.gc-b1{background:#C9A96E;color:#0B0F19!important}
+.gc-b2{border:1px solid rgba(255,255,255,.25);color:#fff!important}
+.gc-f2{margin:22px 0 0;font-size:13px;line-height:1.55;color:rgba(244,239,230,.55)}
+@media(max-width:860px){.gc{padding:44px 14px}.gc-in{padding:28px 20px;border-radius:22px}.gc-box{grid-template-columns:1fr}.gc-res{padding:24px}.gc-cta a{flex:1}.gc-l{flex-direction:column;align-items:flex-start;gap:4px}.gc input[type=number]{width:96px}}
+.gc .gc-eb,.gc .gc-k{color:#C9A96E!important;font-size:12px!important}
+.gc .gc-head h2 em{color:#C9A96E!important;font-style:italic}
+.gc .gc-head p{font-size:16px!important}
+.gc .gc-n{font-size:clamp(56px,7vw,84px)!important;line-height:.95!important}
+.gc .gc-v{font-size:clamp(32px,3.6vw,42px)!important}
+.gc .gc-m,.gc .gc-f2{font-size:13px!important;color:rgba(244,239,230,.6)!important}
+.gc .gc-note{font-size:14px!important;color:rgba(244,239,230,.7)!important}
+.gc .gc-cta p{font-size:15px!important}
+.gc input[type=number]::-webkit-inner-spin-button,.gc input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.gc input[type=number]{-moz-appearance:textfield}
+@media(max-width:860px){.gc .gc-cta a{font-size:15px;white-space:nowrap;padding:0 12px}}

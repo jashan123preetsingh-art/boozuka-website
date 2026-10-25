@@ -2,7 +2,7 @@
 .sv2.v42-svc{background:#fff;border:1px solid #ECE6DA;border-radius:18px;padding:26px 24px 22px;box-shadow:0 1px 0 rgba(11,15,25,.03),0 18px 40px -30px rgba(11,15,25,.35)}
 .sv2.v42-svc:hover{transform:translateY(-3px);border-color:#E2D3B4;box-shadow:0 1px 0 rgba(11,15,25,.03),0 28px 50px -30px rgba(122,95,46,.45)}
 .sv2-top{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid rgba(168,136,79,.35)}
-.sv2-n{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:18px;color:#A8884F;letter-spacing:.04em}
+.sv2-n{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:18px;color:#8A6A35;letter-spacing:.04em}
 .sv2 h4{margin:0;font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:27px;line-height:1.1;letter-spacing:-.01em;color:#0B0F19}
 .sv2-val{margin:0 0 16px;font-size:15px;line-height:1.55;color:#3D4250;min-height:3.1em}
 .sv2-d{border-top:1px solid #F0EBE1;border-bottom:1px solid #F0EBE1;margin:0 0 16px}

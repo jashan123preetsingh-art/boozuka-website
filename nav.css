@@ -2,7 +2,7 @@
 .navigation{height:84px!important;background:#FAF8F3!important;transition:background .25s,box-shadow .25s,height .25s,border-color .25s;border-bottom:1px solid transparent!important}
 .navigation.scrolled{background:rgba(250,248,243,.78)!important;-webkit-backdrop-filter:saturate(180%) blur(18px);backdrop-filter:saturate(180%) blur(18px);box-shadow:0 8px 30px rgba(11,15,25,.08);border-bottom-color:rgba(11,15,25,.06)!important}
 .navigation .brand img{image-rendering:auto;-webkit-font-smoothing:antialiased}
-@media(min-width:601px){
+@media(min-width:1101px){
 .navigation nav{gap:6px!important;align-items:center;font-size:15.5px!important;font-weight:650!important}
 .navigation nav>a,.navigation nav .nav-dd-label{color:#0B0F19!important;font-weight:650!important;font-size:15.5px!important;padding:9px 14px!important;border-radius:999px;background:none!important;transition:background .2s,color .2s;letter-spacing:-.1px}
 .navigation nav>a:after,.navigation nav .nav-dd-label:after{content:''!important;display:block!important;position:absolute;left:14px!important;right:14px;bottom:4px!important;width:auto!important;height:2px!important;background:linear-gradient(90deg,#A8884F,#C9A96E)!important;border-radius:2px;transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
@@ -24,7 +24,7 @@
 .navigation .nav-cta .nav-contact:hover{transform:translateY(-2px);background:#1a2133!important;box-shadow:0 12px 28px rgba(11,15,25,.3)}
 .navigation .nav-cta .nav-contact svg{width:16px;height:16px;color:#C9A96E}
 .nav-mcta{display:none}
-@media(max-width:600px){
+@media(max-width:1100px){
 .navigation{height:68px!important;padding:0 16px!important;gap:10px!important}
 
 .navigation .brand img{width:124px!important;height:auto}
@@ -82,12 +82,12 @@ body.nav-open{overflow:hidden}
 .navigation nav .nav-dd-panel.mm a.mm-cta:hover{background:#1d2333}
 .navigation nav .nav-dd-panel.mm a:after{display:none!important}
 .navigation nav .nav-dd-panel.mm a:focus-visible{outline:2px solid #A8884F;outline-offset:1px}
-@media(min-width:601px){
+@media(min-width:1101px){
 .navigation nav .nav-dd-panel.mm{position:fixed!important;top:var(--mm-top,76px)!important;left:50%!important;width:min(980px,calc(100vw - 32px));transform:translate(-50%,8px);opacity:0;visibility:hidden;transition:opacity .2s ease,transform .22s cubic-bezier(.2,.7,.2,1),visibility 0s .22s}
 .navigation nav .nav-dd-panel.mm:before{content:"";position:absolute;left:0;right:0;top:-24px;height:24px}
 .nav-dd:hover .nav-dd-panel.mm,.nav-dd:focus-within .nav-dd-panel.mm,.nav-dd.open .nav-dd-panel.mm{opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity .2s ease,transform .22s cubic-bezier(.2,.7,.2,1),visibility 0s}}
-@media(min-width:601px) and (max-width:900px){.mm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){
+@media(min-width:1101px) and (max-width:900px){.mm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1100px){
 .navigation nav .nav-dd-panel.mm{display:none;position:static;width:100%;margin:4px 0 12px;box-shadow:none;border-radius:14px;transform:none;opacity:1;visibility:visible}
 .nav-dd.open .nav-dd-panel.mm{display:block}
 .mm-grid{grid-template-columns:1fr;padding:12px 8px 6px;gap:12px}
@@ -116,3 +116,6 @@ header.navigation nav .nav-dd-panel.mm{background:#FCFAF7!important;background-i
 .mm-fn{margin:0;font-size:12.5px;color:#5B6170}
 @media (max-width:1100px){.mm-main{display:block}.mm-main .mm-grid{grid-template-columns:1fr;padding:10px 6px;gap:10px}.mm-plans{border-left:0;border-top:1px solid rgba(122,95,46,.14);padding:16px 14px;border-radius:12px}.mm-fn{display:none}.mm-foot{flex-wrap:wrap;padding:12px 14px}header.navigation nav .nav-dd-panel.mm{width:auto!important;box-shadow:none!important}}
 .mm-main .mm-grid{align-content:start;gap:26px 22px}
+@media (min-width:601px) and (max-width:1100px){.menu-toggle{display:block;position:relative;margin-left:auto}.navigation nav{display:none;position:absolute;top:76px;left:0;right:0}.navigation nav.open{display:flex;flex-direction:column}.navigation nav a:after{display:none}}
+@media (min-width:601px) and (max-width:1100px){.navigation nav .nav-dd{display:flex;flex-wrap:wrap;align-items:center}.navigation nav .nav-dd-panel.mm{flex:0 0 100%}}
+@media (min-width:1101px){.navigation nav>a,.navigation nav .nav-dd-label{white-space:nowrap}}

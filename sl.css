@@ -80,3 +80,6 @@
 .sl h1 em,.sl h2 em{font-style:italic!important;color:#C9A96E!important;font-family:inherit!important}
 .m-tee{background:linear-gradient(160deg,#F5F1E8,#DCD3C2)}.m-tee span{color:#0B0F19}
 .m-side span{white-space:nowrap}
+.m-btn{background:#13803D}
+.sl-sec h2 em{color:#8A6A35!important}.sl-sec .sl-get span,.sl-sec .sl-steps span,.sl-sec .sl-rel small{color:#8A6A35}
+.sl-crumb a,.sl-crumb span{color:#AEB3BF}.sl-note{color:#A3A9B6}

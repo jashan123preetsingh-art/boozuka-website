@@ -1079,3 +1079,10 @@ body.page-pricing{padding-bottom:84px}
 .button.lime{background:linear-gradient(135deg,#C9A96E,#D9BE87);box-shadow:0 8px 22px #C9A96E40}
 .button.lime:hover{box-shadow:0 12px 30px #C9A96E66}
 @media(prefers-reduced-motion:reduce){.hero:before,.hero h1 em,.v42-mq-t{animation:none!important}.pl4-grid li,.v42-svc,.service-card{transition:none!important}}
+/* v42.3 polish: calmer, corporate-premium */
+.hero h1 em{animation:none;background:none;color:#8A6D3B;-webkit-background-clip:initial;background-clip:initial}
+.hero:before{opacity:.7;animation-duration:30s}
+.v42-mq{padding:16px 0}.v42-mq-t{animation-duration:60s;gap:28px}
+.v42-mq-t span{font-size:clamp(22px,2.6vw,34px);font-style:normal;letter-spacing:-.5px}
+.v42-mq-t i{font-size:15px}
+.pl4-grid li:before{opacity:.6}

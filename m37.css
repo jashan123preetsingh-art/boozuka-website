@@ -1,5 +1,5 @@
 .wf37s{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:center}
-.wf37-copy .eb{display:inline-flex;align-items:center;gap:8px;font:600 12px/1 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8A6A2E;margin:0 0 20px}
+.wf37-copy .eb{display:inline-flex;align-items:center;gap:8px;font:600 12px/1 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#755720;margin:0 0 20px}
 .wf37-copy .eb i{width:6px;height:6px;border-radius:50%;background:#C9A96E;box-shadow:0 0 0 4px rgba(201,169,110,.18)}
 .wf37-copy h2{margin:0 0 20px}
 .wf37-copy>p{max-width:440px;color:#4b5563;font-size:16px;line-height:1.6;margin:0 0 28px}

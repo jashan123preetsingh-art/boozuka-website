@@ -140,3 +140,9 @@ if (window.matchMedia('(pointer:fine)').matches && !motionPreference.matches) {
   }
   f.addEventListener('input',calc); f.addEventListener('submit',e=>e.preventDefault()); calc();
 })();
+
+(()=>{document.querySelectorAll('.nav-dd').forEach(d=>{const b=d.querySelector('.nav-dd-tog');if(!b)return;
+  b.addEventListener('click',e=>{e.preventDefault();const o=d.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  d.addEventListener('mouseleave',()=>{if(matchMedia('(min-width:601px)').matches){d.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+  document.addEventListener('click',e=>{if(!d.contains(e.target)){d.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){d.classList.remove('open');b.setAttribute('aria-expanded','false')}});});})();

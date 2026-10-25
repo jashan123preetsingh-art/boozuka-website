@@ -951,3 +951,18 @@ body.page-pricing{padding-bottom:84px}
 @media (max-width:860px){.cs-ex{grid-template-columns:minmax(0,1fr)}}
 
 .v24-links{display:flex;flex-wrap:wrap;gap:8px 18px;padding:22px var(--gutter);border-top:1px solid rgba(255,255,255,.08);font-size:13px}.v24-links .sf-h{width:100%;margin:0 0 4px}.v24-links a{color:inherit;opacity:.78;text-decoration:none}.v24-links a:hover{opacity:1;text-decoration:underline}
+
+/* v28 Services dropdown */
+.nav-dd{position:relative;display:flex;align-items:center;gap:2px}
+.nav-dd-tog{background:none;border:0;color:inherit;font:inherit;font-size:11px;cursor:pointer;padding:12px 4px;line-height:1;transition:transform .2s}
+.nav-dd-panel{position:absolute;top:100%;left:-18px;min-width:270px;display:flex;flex-direction:column;padding:10px;background:#0B0F19;border:1px solid #ffffff1f;border-radius:14px;box-shadow:0 24px 50px #0B0F1940;opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .18s,transform .18s,visibility .18s;z-index:60}
+.navigation nav .nav-dd-panel a{color:#E8EAF0;padding:9px 12px;border-radius:9px;font-size:13px;background:none}
+.navigation nav .nav-dd-panel a:after{display:none}
+.navigation nav .nav-dd-panel a:hover{background:#ffffff12}
+.navigation nav .nav-dd-panel a.nav-dd-ai{margin-top:6px;padding:12px;background:linear-gradient(135deg,#7C5CFF33,#22D3EE26);border:1px solid #8B7CFF66;box-shadow:0 0 18px #7C5CFF40}
+.navigation nav .nav-dd-panel a.nav-dd-ai:hover{box-shadow:0 0 26px #7C5CFF80;background:linear-gradient(135deg,#7C5CFF55,#22D3EE3a)}
+.nav-dd-ai-t{display:flex;align-items:center;gap:7px;font-weight:650;color:#fff}
+.nav-dd-ai em{font-style:normal;font-size:9px;letter-spacing:.08em;font-weight:700;padding:2px 6px;border-radius:99px;background:linear-gradient(90deg,#A78BFA,#22D3EE);color:#0B0F19}
+.nav-dd-ai small{display:block;margin-top:3px;font-size:11.5px;color:#B8BDD0;font-weight:450}
+@media(min-width:601px){.nav-dd:hover .nav-dd-panel,.nav-dd:focus-within .nav-dd-panel,.nav-dd.open .nav-dd-panel{opacity:1;visibility:visible;transform:none}.nav-dd:hover .nav-dd-tog,.nav-dd.open .nav-dd-tog{transform:rotate(180deg)}}
+@media(max-width:600px){.nav-dd{flex-wrap:wrap;justify-content:space-between}.nav-dd-tog{font-size:14px;padding:11px 8px}.nav-dd-panel{position:static;width:100%;min-width:0;display:none;opacity:1;visibility:visible;transform:none;margin:2px 0 8px;box-shadow:none}.nav-dd.open .nav-dd-panel{display:flex}.nav-dd.open .nav-dd-tog{transform:rotate(180deg)}}

@@ -60,3 +60,4 @@
 /* pause all hero loops until idle + while off-screen */
 html:not(.hx-run) .hero:after,html:not(.hx-run) .h2-beam,html:not(.hx-run) .hx *,html:not(.hx-run) .xp-wrap{animation-play-state:paused!important}
 .hx-pg{will-change:auto}.hx-on .hx-pg{will-change:transform}
+.xp-sys{background:#FFEECD;color:#54656F}

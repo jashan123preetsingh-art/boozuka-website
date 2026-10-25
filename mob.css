@@ -77,5 +77,5 @@ html,body{overflow-x:clip}
 #cal-inline iframe,#cal-inline .cal-embed{height:820px!important;min-height:820px!important}
 @media(min-width:769px){#cal-inline,.cal-inline-wrap{height:720px;min-height:720px}#cal-inline iframe,#cal-inline .cal-embed{height:720px!important;min-height:720px!important}}
 .v42-grid,.hero .hx-st{scroll-snap-type:x proximity!important;overscroll-behavior-x:contain;touch-action:pan-x pan-y}
-.gc-n span,.gc-v span{font-variant-numeric:tabular-nums lining-nums;display:inline-block;min-width:2ch}
+.gc-n span,.gc-v span{font-variant-numeric:tabular-nums lining-nums;display:inline-block}
 .gc-v span{min-width:6.5ch}

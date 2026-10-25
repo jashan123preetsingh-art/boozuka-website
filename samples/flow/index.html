@@ -1,30 +1,32 @@
-<!doctype html><html lang="en-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Boozuka Flow · Lead follow-up sample app · Boozuka</title><meta name="robots" content="noindex, follow">
-<meta name="description" content="Boozuka Flow, a lead management and follow-up web app sample built by Boozuka. Demo data, no real messages.">
-<link rel="icon" href="../../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="flow.css?v=30"><link rel="stylesheet" href="flow30.css?v=1"></head>
+<!doctype html><html lang="en-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Boozuka Flow · Lead follow-up sample app · Boozuka</title><meta name="robots" content="noindex, follow"><meta name="theme-color" content="#09090b">
+<meta name="description" content="Boozuka Flow, a lead management and WhatsApp follow-up web app sample built by Boozuka. Demo data only, no real messages are sent.">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml"><link rel="preload" href="../../assets/manrope.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="app.css?v=32"></head>
 <body>
-<div class="banner">Sample app · demo data, no real messages are sent · <a href="../flow.html">About this sample</a> · <a href="../../index.html">boozuka.com</a></div>
-<div class="app" id="app">
-<aside class="side" id="side">
- <div class="brand"><span class="dots"><i></i><i></i><i></i></span><img src="../../assets/mark.svg" alt="" width="22" height="22"><b>Boozuka <em>Flow</em></b></div>
- <button class="cmdk" id="cmdOpen" type="button"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search or jump<kbd>Ctrl K</kbd></button>
- <nav id="nav" aria-label="App sections"></nav>
- <div class="side-foot"><div class="ws"><span class="av sm g">DW</span><div><b>Demo workspace</b><small>4 sample businesses</small></div></div></div>
-</aside>
-<div class="main">
- <header class="bar"><button class="ico mob" id="menuBtn" type="button" aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  <h1 id="title">Dashboard</h1><span class="live"><b></b>Live sample</span>
-  <div class="bar-r"><select id="bizSel" aria-label="Business"></select>
-  <button class="ico" id="cmdBtn" type="button" aria-label="Command palette"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
-  <button class="ico" id="bellBtn" type="button" aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10 21h4"/></svg><span class="dotn" id="bellDot"></span></button>
-  <button class="btn pri" id="newLead" type="button">+ New lead</button></div>
-  <div class="pop" id="notif" hidden></div>
- </header>
- <main id="view" tabindex="-1"></main>
-</div></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="demo-bar"><span class="demo-dot"></span><b>Sample app</b> · demo data, no real messages are sent<span class="hide-s"> · names and businesses are made up</span> · <a href="../flow.html">About</a> · <a href="../../index.html">boozuka.com</a></div>
+<div class="shell" id="shell">
+ <aside class="side" aria-label="Sidebar">
+  <div class="ws"><span class="ws-logo">B</span><div><b>Boozuka Flow</b><small id="wsName">All businesses</small></div><button class="ws-sw" id="bizBtn" type="button" aria-label="Switch business"><svg viewBox="0 0 24 24"><path d="m7 10 5-5 5 5M7 14l5 5 5-5"/></svg></button></div>
+  <button class="k-search" id="kOpen" type="button"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search or jump…</span><kbd>⌘K</kbd></button>
+  <nav class="snav" id="snav" aria-label="Sections"></nav>
+  <div class="side-card"><div class="sc-h"><span class="pulse"></span>Live sample</div><p>New enquiries arrive every few seconds so you can see Flow at work.</p><button type="button" class="link" id="pauseLive">Pause live demo</button></div>
+  <div class="me"><span class="av" style="--h:262">SK</span><div><b>Simran Kaur</b><small>Owner · sample</small></div></div>
+ </aside>
+ <div class="main">
+  <header class="top"><div class="crumb"><span class="m-logo">B</span><h1 id="title">Today</h1></div>
+   <div class="top-r"><button class="ib" id="kBtn" type="button" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+   <button class="ib" id="bellBtn" type="button" aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10 21h4"/></svg><i class="bdot" id="bdot"></i></button>
+   <button class="btn pri" id="newLead" type="button"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span>New lead</span></button></div>
+   <div class="pop" id="notif" hidden></div></header>
+  <main id="view" tabindex="-1"></main>
+ </div>
+</div>
+<nav class="tabbar" id="tabbar" aria-label="Sections"></nav>
 <div class="scrim" id="scrim" hidden></div>
 <aside class="drawer" id="drawer" aria-label="Lead profile" hidden></aside>
-<div class="modal" id="cmd" hidden><div class="cmd-box" role="dialog" aria-label="Command palette"><input id="cmdIn" placeholder="Type a lead, a screen or an action…" autocomplete="off"><div id="cmdList" role="listbox"></div><p class="cmd-hint">↑ ↓ to move · Enter to open · Esc to close</p></div></div>
-<div class="modal" id="form" hidden></div>
+<div class="sheet" id="sheet" hidden></div>
+<div class="kbar" id="kbar" hidden><div class="k-box" role="dialog" aria-label="Command bar"><div class="k-in"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="kIn" placeholder="Search leads, jump to a screen, run an action…" autocomplete="off" aria-label="Command"><kbd>Esc</kbd></div><div id="kList" class="k-list" role="listbox"></div><div class="k-foot"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span>Sample data</span></div></div></div>
 <div class="toasts" id="toasts" aria-live="polite"></div>
-<script src="flow.js?v=30"></script></body></html>
+<script src="app.js?v=32"></script></body></html>

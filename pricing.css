@@ -39,3 +39,4 @@
 @media(max-width:900px){.pz-row{grid-template-columns:1fr auto}}
 @media(max-width:420px){.pz-row{grid-template-columns:1fr}}
 @media(max-width:640px){.pv6-sticky{gap:8px!important;padding:10px 12px!important;min-height:0}.pv6-sticky p{display:none}.pv6-sticky .button{flex:1 1 0!important;justify-content:center;padding:11px 10px!important;font-size:14px}.pv6-sticky .pv10-sticky-wa{flex:none;font-size:14px}body{padding-bottom:72px}}
+.pz-tabs a span{color:#7A5F2E}.pz-t small,.pz-p small{color:#555A63}

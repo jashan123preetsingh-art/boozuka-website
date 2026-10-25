@@ -23,3 +23,4 @@
 .cal-ph a{color:#A8884F;text-decoration:underline}
 #cal-inline.loaded .cal-ph{display:none}
 @media(max-width:860px){.cal-card-in{grid-template-columns:1fr;padding:24px 16px;border-radius:18px;gap:20px}.cal-card-copy{padding:0 6px}}
+.cal-ph a{color:#7A5F2E}

@@ -92,3 +92,7 @@ body.page-ai{background:#05070e}
 .x27 .x27-faq details{padding:0 20px!important}
 .x27 .x27-faq details p{padding-bottom:16px}
 .x27 .x27-faq summary span{font-size:20px!important;font-weight:400}
+
+body.page-ai .x27 .x27-faq details summary>span[aria-hidden]{font-size:26px!important;line-height:1!important;width:30px;height:30px;display:grid!important;place-items:center;border-radius:50%;border:1px solid #22d3ee55;color:#22d3ee!important;background:#22d3ee12}
+body.page-ai .x27 .x27-faq details summary>span[aria-hidden]{font-size:0!important;flex:none;position:relative;width:32px;height:32px;background:linear-gradient(#22d3ee,#22d3ee) center/14px 2px no-repeat,linear-gradient(#22d3ee,#22d3ee) center/2px 14px no-repeat,#22d3ee12!important;transition:transform .25s,background-color .25s}
+body.page-ai .x27 .x27-faq details[open] summary>span[aria-hidden]{transform:rotate(45deg);background-color:#22d3ee26!important}

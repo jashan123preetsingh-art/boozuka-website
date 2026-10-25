@@ -1,0 +1,14 @@
+{
+  "_how": "Copy this object into cases.json only when the client has signed off. Every field must be real. Remove a field instead of guessing.",
+  "slug": "client-name-city",
+  "client": "Client business name",
+  "city": "Ludhiana",
+  "industry": "Salon",
+  "service": "Website + Google Business Profile + WhatsApp auto-reply",
+  "problem": "One or two sentences in the client's words.",
+  "did": ["What we built or set up, step 1", "Step 2", "Step 3"],
+  "before": {"src": "/work/img/client-before.webp", "w": 1280, "h": 800, "alt": "Before: old website on mobile"},
+  "after":  {"src": "/work/img/client-after.webp",  "w": 1280, "h": 800, "alt": "After: new website on mobile"},
+  "results": [{"label": "WhatsApp enquiries per month", "before": "8", "after": "21", "period": "Jan vs Apr 2027", "source": "WhatsApp Business labels"}],
+  "quote": {"text": "Exact words, approved in writing.", "name": "Full name", "role": "Owner, Business name", "consent": "2027-01-31"}
+}

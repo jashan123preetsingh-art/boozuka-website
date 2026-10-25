@@ -1,0 +1,19 @@
+.oc{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:center}
+.oc h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,4vw,54px);line-height:1.05;margin:10px 0 26px;color:#0B0F19}
+.oc h2 em{color:#9A7A3E;font-style:italic}
+.oc-list{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:16px}
+.oc-list li{display:flex;gap:14px;align-items:flex-start}
+.oc-list svg{flex:none;width:30px;height:30px;padding:6px;border-radius:50%;background:#0B0F19;color:#C9A96E}
+.oc-list b{display:block;font-size:17px;color:#0B0F19}.oc-list span{font-size:15px;color:#4B5160}
+.oc-mute{margin:18px 0 0;font-size:13px;color:#7A7F8A}
+.oc-vis{position:relative;margin:0;min-height:430px;border-radius:24px;background:radial-gradient(120% 90% at 20% 0%,#1B2236,#0B0F19);padding:34px;overflow:hidden}
+.oc-vis>div{position:absolute;border-radius:16px;box-shadow:0 30px 60px -28px rgba(0,0,0,.7)}
+.oc-vis small{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#7A7F8A;margin-bottom:6px}
+.oc-g{left:7%;top:9%;width:62%;background:#fff;padding:16px 18px}.oc-g b{display:block;font-size:17px;color:#0B0F19}.oc-g i{display:block;font-style:normal;font-size:13px;color:#1F8A4C;margin:2px 0 12px}
+.oc-g div{display:flex;gap:6px}.oc-g div span{font-size:12px;font-weight:600;border:1px solid #DADCE0;border-radius:99px;padding:5px 10px;color:#1A56C9}
+.oc-w{right:7%;top:38%;width:60%;background:#ECE5DD;padding:14px}.oc-w p{margin:6px 0;font-size:14px;padding:9px 12px;border-radius:10px;max-width:88%;color:#111}
+.oc-w .in{background:#fff}.oc-w .out{background:#D9FDD3;margin-left:auto}.oc-w em{display:block;font-style:normal;font-size:11px;color:#5B6170;margin-top:4px}
+.oc-l{left:9%;bottom:14%;background:#C9A96E;color:#0B0F19;font-size:13.5px;font-weight:700;padding:11px 16px;border-radius:99px!important}
+.oc-l span{color:#0B0F19;margin-right:4px}
+.oc-vis figcaption{position:absolute;right:22px;bottom:16px;font-size:11px;color:#7A7F8A}
+@media(max-width:860px){.oc{grid-template-columns:1fr}.oc-vis{min-height:400px}.oc-g,.oc-w{width:78%}}

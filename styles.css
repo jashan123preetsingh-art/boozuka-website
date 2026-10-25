@@ -1046,3 +1046,5 @@ body.page-pricing{padding-bottom:84px}
 @media(max-width:800px){.v42-vgrid{grid-template-columns:1fr}}
 .v42-legal a{text-decoration:underline;text-underline-offset:3px}
 .v42-nospam a{text-decoration:underline}
+.v42-skill{font-size:13px;line-height:1.7;color:#1F2937;margin:0 0 14px;padding:10px 12px;border-left:2px solid #C9A96E;background:#F3F1EC}
+.v42-vp{margin-top:14px}

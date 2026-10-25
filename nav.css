@@ -98,4 +98,5 @@ body.nav-open{overflow:hidden}
 .mm-acts{justify-content:space-between}.navigation nav .nav-dd-panel.mm a.mm-cta{flex:1;justify-content:center}}
 @media (prefers-reduced-motion:reduce){.navigation nav .nav-dd-panel.mm{transition:none}}
 .mm-ic.mm-n{background:none!important;border:0!important;box-shadow:none!important;width:auto!important;min-width:22px;height:auto!important;display:inline-block!important;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:17px;line-height:1.2;color:#A8884F!important;padding-top:1px;letter-spacing:.02em}
-.mm-it:hover .mm-ic.mm-n{color:#7A5F2E!important;background:none!important}
+.mm-it:hover .mm-tx b{box-shadow:inset 0 -1px 0 #C9A96E}.mm-it:hover .mm-ic.mm-n{color:#7A5F2E!important;background:none!important}
+header.navigation{z-index:1000!important}

@@ -21,7 +21,7 @@
 /* journey */
 .lg-path{border-top:0!important;position:relative;padding-top:8px!important}
 .lg-path li::before{display:none!important}
-.lg-path li.lg-bar{position:absolute;left:0;right:0;top:49px;height:2px;padding:0;margin:0;border:0;background:var(--line,#E5E1D8);grid-column:1/-1}
+.lg-path li.lg-bar{position:absolute;left:0;right:0;top:0;height:2px;padding:0;margin:0;border:0;background:var(--line,#E5E1D8);grid-column:1/-1}
 .lg-bar i{position:absolute;inset:0;background:linear-gradient(90deg,#C9A96E,#A8884F);transform-origin:left;transform:scaleX(0);transition:transform 2.4s cubic-bezier(.65,0,.35,1)}
 .lg-path.go .lg-bar i{transform:scaleX(1)}
 .lg-ic{position:relative;z-index:1;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#fff;color:#7A5F2E;border:1px solid #E7DDC9;box-shadow:0 8px 18px -10px rgba(122,95,46,.45);margin-bottom:14px}

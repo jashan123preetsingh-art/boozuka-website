@@ -1,9 +1,9 @@
 .v42-grid{align-items:stretch;gap:20px}
 .sv2.v42-svc{background:#fff;border:1px solid #ECE6DA;border-radius:18px;padding:26px 24px 22px;box-shadow:0 1px 0 rgba(11,15,25,.03),0 18px 40px -30px rgba(11,15,25,.35)}
 .sv2.v42-svc:hover{transform:translateY(-3px);border-color:#E2D3B4;box-shadow:0 1px 0 rgba(11,15,25,.03),0 28px 50px -30px rgba(122,95,46,.45)}
-.sv2-top{display:flex;align-items:center;gap:14px;margin-bottom:12px}
-.sv2-ic{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:linear-gradient(145deg,#FBF6EC,#F1E6D0);color:#7A5F2E;border:1px solid #E9DCC1;box-shadow:inset 0 1px 0 #fff}
-.sv2 h4{margin:0;font-size:18px;line-height:1.25;letter-spacing:-.01em}
+.sv2-top{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid rgba(168,136,79,.35)}
+.sv2-n{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:18px;color:#A8884F;letter-spacing:.04em}
+.sv2 h4{margin:0;font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:27px;line-height:1.1;letter-spacing:-.01em;color:#0B0F19}
 .sv2-val{margin:0 0 16px;font-size:15px;line-height:1.55;color:#3D4250;min-height:3.1em}
 .sv2-d{border-top:1px solid #F0EBE1;border-bottom:1px solid #F0EBE1;margin:0 0 16px}
 .sv2-d summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:12px 0;font-size:13.5px;font-weight:650;color:#0B0F19}

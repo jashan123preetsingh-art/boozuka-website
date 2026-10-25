@@ -1101,3 +1101,8 @@ html body .pl4-grid li .pl4-n{color:#C9A96E!important}
 html body .x27-n{color:#d4b06a;margin-bottom:10px}
 html body .pz-no{color:#7A5F2E;font-size:40px!important;min-width:74px}
 @media(max-width:640px){html body .pz-no{font-size:34px!important;min-width:0}html body .pl4-n,html body .x27-n{font-size:30px!important}}
+/* team cards fix (all pages) */
+.team7 .tm-card{display:flex!important;flex-direction:column;gap:10px;padding:30px 30px 28px!important;min-height:0!important}
+.team7 .tm-card .tm-role{margin:0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A35}
+.team7 .tm-card h3{margin:4px 0 0;font-size:26px;line-height:1.15}
+.team7 .tm-card .tm-t{margin:0;max-width:44ch;color:#4B5160;font-size:15px;line-height:1.55}

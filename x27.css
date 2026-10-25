@@ -70,8 +70,25 @@ body.page-ai{background:#05070e}
 .x27-sub h2{color:#fff!important}.x27-sub .eyebrow,.x27-sub .bz-k{color:#d4b06a!important}.x27-sub .v17-tools-note,.x27-sub .bz-card p:not(.bz-k){color:#a9b0c2!important}.x27-sub .bz-card{background:linear-gradient(180deg,#131c33,#0b1120)!important;border:1px solid #222c47!important;box-shadow:none!important}.x27-sub .bz-card h3{color:#fff!important}.x27-sub .v17-pill{background:#121a2d!important;border-color:#2a3556!important;color:#e7e9ef!important}.x27-sub .v17-mq{-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .x27-dgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.x27-dl{display:block;padding:28px;border-radius:22px;text-decoration:none;color:#e7e9ef;background:linear-gradient(160deg,rgba(212,176,106,.12),rgba(125,211,252,.05));border:1px solid rgba(212,176,106,.3);transition:transform .25s,box-shadow .25s}.x27-dl:hover{transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(212,176,106,.6)}.x27-dl h3{font-size:28px;margin:6px 0 8px}.x27-dl p{color:#a9b0c2}.x27-dl b{color:#ecd39d}
 .x27-trust{padding:20px 0 70px}.x27-trust p{border:1px solid rgba(52,211,153,.3);background:rgba(52,211,153,.06);border-radius:18px;padding:20px 24px;color:#c7cddb;font-size:16px}.x27-trust b{color:#a7f3d0}
-.x27-faq{background:#f8f6f0}
+
 .x27-end{padding:110px 0;text-align:center;background:radial-gradient(600px 300px at 50% 0,rgba(212,176,106,.2),transparent 70%)}.x27-end h2{font-size:clamp(32px,5.4vw,64px);letter-spacing:-.035em;line-height:1.04;font-weight:800;margin:0 0 14px;font-family:Manrope,system-ui,sans-serif}.x27-end p{color:#8d96ad;margin:0 0 28px}
 @media(max-width:960px){.x27-story{grid-template-columns:minmax(0,1fr)}.x27-rail{display:none}.x27-card{grid-template-columns:minmax(0,1fr)}.x27-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.x27-steps,.x27-dgrid{grid-template-columns:minmax(0,1fr)}.x27-hero{padding:90px 0 60px;min-height:auto}.x27-svc,.x27-how,.x27-demos{padding:60px 0}.x27-btn{width:100%;justify-content:center}}
 @media(prefers-reduced-motion:reduce){.x27 *,.x27 *:before{animation:none!important;transition:none!important}.x27-card{opacity:1;transform:none}.dm-chat .b,.dm-tasks p{opacity:1;transform:none}.dm-chart .ln{stroke-dashoffset:0}.dm-chart .ar{opacity:1}}
+
+/* v29 dark FAQ */
+.x27 .x27-faq{background:linear-gradient(180deg,#05070e,#0a0f1f 60%,#05070e)!important;color:#e7e9ef;border-top:1px solid #ffffff12}
+.x27 .x27-faq h2{color:#fff!important}
+.x27 .x27-faq .eyebrow{color:#a78bfa!important}
+.x27 .x27-faq>div>p,.x27 .x27-faq>div>p a{color:#b8bdd0!important}
+.x27 .x27-faq .text-link{color:#22d3ee!important}
+.x27 .x27-faq details{background:#ffffff08!important;border:1px solid #ffffff1a!important;border-radius:14px;margin-bottom:10px;padding:0 18px}
+.x27 .x27-faq details[open]{border-color:#8b7cff66!important;box-shadow:0 0 22px #7c5cff26}
+.x27 .x27-faq summary{color:#f2f3f7!important}
+.x27 .x27-faq summary span{color:#22d3ee!important}
+.x27 .x27-faq details p{color:#c3c8d8!important}
+.x27 .x27-trust p{color:#c3c8d8}.x27 .x27-trust b{color:#fff}
+.x27 .x27-end h2{color:#fff}.x27 .x27-end p{color:#c3c8d8}
+.x27 .x27-faq details{padding:0 20px!important}
+.x27 .x27-faq details p{padding-bottom:16px}
+.x27 .x27-faq summary span{font-size:20px!important;font-weight:400}

@@ -28,9 +28,12 @@
     Object.keys(LABELS).forEach(function(k){if(o[k])payload[LABELS[k]]=o[k];});payload['Page']=location.href;
     var done=false,timer=setTimeout(function(){if(!done){done=true;fail();}},15000);
     function fail(){finish('Almost done: send it on WhatsApp','We could not send the form just now. WhatsApp is opening with your details filled in. Just press send.');var w=window.open(waLink,'_blank','noopener');if(!w)location.href=waLink;}
+    var crm=window.bzIntake?window.bzIntake({form:'get-quote',name:o.name,whatsapp:o.whatsapp,service:o.services,business:o.business,city:o.city,email:o.email,notes:o.description,hp:f._honey?f._honey.value:''}):Promise.resolve(false);
+    function good(){if(done)return;done=true;clearTimeout(timer);finish();if(window.gtag)gtag('event','generate_lead');}
+    crm.then(function(k){if(k)good();});
     fetch(EP,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)})
       .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
-      .then(function(x){if(done)return;done=true;clearTimeout(timer);if(x.ok&&String(x.j.success)==='true'){finish();if(window.gtag)gtag('event','generate_lead');}else fail();})
-      .catch(function(){if(done)return;done=true;clearTimeout(timer);fail();});
+      .then(function(x){if(x.ok&&String(x.j.success)==='true')good();else crm.then(function(k){if(k)good();else if(!done){done=true;clearTimeout(timer);fail();}});})
+      .catch(function(){crm.then(function(k){if(k)good();else if(!done){done=true;clearTimeout(timer);fail();}});});
   });
 })();

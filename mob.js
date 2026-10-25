@@ -9,3 +9,5 @@ document.body.appendChild(b);document.body.classList.add('has-mbar');
 const f=document.querySelector('footer');let foot=false,typing=false;const up=()=>b.classList.toggle('hide',foot||typing);
 if(f&&'IntersectionObserver'in window)new IntersectionObserver(e=>{foot=e[0].isIntersecting;up()},{rootMargin:'0px 0px -40px 0px'}).observe(f);
 addEventListener('focusin',e=>{if(e.target.matches('input,textarea,select')){typing=true;up()}});addEventListener('focusout',()=>{typing=false;up()});})();
+/* CTA source tracking: remember which CTA/page sent the visitor to a form */
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';var t=/get-quote|\/contact/.test(h)?'form':/cal\.com/.test(h)?'booking':/wa\.me/.test(h)?'whatsapp':'';if(!t)return;var c=a.getAttribute('data-cta')||(a.closest('[id]')?a.closest('[id]').id:'')||'link';try{sessionStorage.setItem('bz_cta',JSON.stringify({cta:t+'-'+c,from:location.pathname}))}catch(_){}if(window.gtag)gtag('event','cta_click',{cta_type:t,cta_id:c,page:location.pathname});},true);

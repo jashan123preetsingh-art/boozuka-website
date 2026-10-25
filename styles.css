@@ -1106,3 +1106,10 @@ html body .pz-no{color:#7A5F2E;font-size:40px!important;min-width:74px}
 .team7 .tm-card .tm-role{margin:0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A35}
 .team7 .tm-card h3{margin:4px 0 0;font-size:26px;line-height:1.15}
 .team7 .tm-card .tm-t{margin:0;max-width:44ch;color:#4B5160;font-size:15px;line-height:1.55}
+.ln-shot{margin:0;min-width:0;border:1px solid rgba(11,15,25,.12);border-radius:14px;background:#fff;overflow:hidden}
+.ln-shot .ln-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:#F4F1EA;border-bottom:1px solid rgba(11,15,25,.08)}
+.ln-shot .ln-bar i{width:9px;height:9px;border-radius:50%;background:rgba(11,15,25,.16)}
+.ln-shot .ln-bar span{margin-left:10px;font:500 12px Manrope,sans-serif;color:rgba(11,15,25,.6);background:#fff;padding:3px 10px;border-radius:6px}
+.ln-shot .ln-img{display:block;line-height:0}
+.ln-shot img{width:100%;height:auto;display:block}
+.ln-shot figcaption{padding:10px 14px;font:500 12px Manrope,sans-serif;color:rgba(11,15,25,.6);border-top:1px solid rgba(11,15,25,.08)}

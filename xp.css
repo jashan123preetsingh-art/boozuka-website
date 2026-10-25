@@ -57,3 +57,6 @@
 @media (min-width:1101px){.hx-vp{height:300px}.hx-hero2{height:200px}.hx-cards{bottom:-6px}}
 .hx-ov h4{font-size:26px;line-height:1.08;margin:8px 0 12px}
 .hx-ov small{display:block}
+/* pause all hero loops until idle + while off-screen */
+html:not(.hx-run) .hero:after,html:not(.hx-run) .h2-beam,html:not(.hx-run) .hx *,html:not(.hx-run) .xp-wrap{animation-play-state:paused!important}
+.hx-pg{will-change:auto}.hx-on .hx-pg{will-change:transform}

@@ -1,6 +1,6 @@
 (()=>{const f=document.querySelector('.hx');if(!f)return;const ch=f.querySelector('.xp-ch'),st=f.querySelector('.xp-st');if(!ch)return;
 if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-const R=document.documentElement,run=()=>R.classList.contains('hx-run');
+const R=f.closest('section.hero')||document.documentElement,run=()=>R.classList.contains('hx-run');
 const parts=[...ch.children].map(n=>n.cloneNode(true));
 const w=async ms=>{while(!run())await new Promise(r=>setTimeout(r,400));await new Promise(r=>setTimeout(r,ms))};
 const add=i=>{const n=parts[i].cloneNode(true);n.classList.add('xpop');ch.append(n);return n};

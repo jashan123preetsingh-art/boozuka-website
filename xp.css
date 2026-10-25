@@ -184,3 +184,8 @@ main>section:not(.hero):not(.pl4){content-visibility:auto;contain-intrinsic-size
 @media (min-width:1600px){.hx-crm.mac{width:350px;right:-70px}}
 @media (max-width:1100px){.hx-crm.mac{width:min(360px,94%)}}
 .hx-crm.mac{border:0!important}
+/* team cards: fix broken grid, editorial layout */
+.team7 .tm-card{display:flex!important;flex-direction:column;gap:10px;padding:30px 30px 28px!important;min-height:0!important}
+.team7 .tm-card .tm-role{margin:0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A35;padding-bottom:12px;border-bottom:1px solid rgba(11,15,25,.1)}
+.team7 .tm-card h3{margin:6px 0 0;font-size:26px;line-height:1.15}
+.team7 .tm-card .tm-t{margin:0;max-width:44ch;color:#4B5160;font-size:15px;line-height:1.55}

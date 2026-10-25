@@ -40,3 +40,9 @@
 @media(max-width:420px){.pz-row{grid-template-columns:1fr}}
 @media(max-width:640px){.pv6-sticky{gap:8px!important;padding:10px 12px!important;min-height:0}.pv6-sticky p{display:none}.pv6-sticky .button{flex:1 1 0!important;justify-content:center;padding:11px 10px!important;font-size:14px}.pv6-sticky .pv10-sticky-wa{flex:none;font-size:14px}body{padding-bottom:72px}}
 .pz-tabs a span{color:#7A5F2E}.pz-t small,.pz-p small{color:#555A63}
+.pz-bundle{margin:28px 0 0;padding:36px 40px;border-radius:20px;background:var(--panel);border:1px solid rgba(168,136,79,.35)}
+.pz-bundle h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:38px;line-height:1.05;margin:6px 0 22px}.pz-bundle h3 em{color:#7A5F2E}
+.pz-bgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.pz-bgrid>div{border-top:1px solid var(--line);padding-top:18px}
+.pz-bgrid h4{margin:12px 0 6px;font-size:17px}.pz-bgrid p{margin:0;color:#5B6170;font-size:14.5px;line-height:1.6}
+.pz-bnote{margin:22px 0 0;font-size:13px;color:#555A63}
+@media(max-width:640px){.pz-bundle{padding:26px 20px}.pz-bundle h3{font-size:30px}.pz-bgrid{grid-template-columns:1fr;gap:20px}}

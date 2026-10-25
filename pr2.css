@@ -80,3 +80,5 @@
 @media(max-width:900px){.p2-faq{grid-template-columns:minmax(0,1fr);gap:16px}}
 @media(max-width:600px){.p2>section:not(.xb-end){padding-left:16px;padding-right:16px}}
 .p2-faq>div:first-child{position:sticky;top:96px}@media(max-width:900px){.p2-faq>div:first-child{position:static}}
+.p2-svlink{display:inline-flex;margin-top:14px}
+@media(max-width:768px){.p2-tabs{flex-wrap:nowrap!important;overflow-x:auto;max-width:100%;scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch}.p2-tabs::-webkit-scrollbar{display:none}.p2-tab{flex:0 0 auto!important;white-space:nowrap;scroll-snap-align:start;min-height:44px}}

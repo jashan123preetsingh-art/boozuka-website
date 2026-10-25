@@ -79,3 +79,21 @@ html,body{overflow-x:clip}
 .v42-grid,.hero .hx-st{scroll-snap-type:x proximity!important;overscroll-behavior-x:contain;touch-action:pan-x pan-y}
 .gc-n span,.gc-v span{font-variant-numeric:tabular-nums lining-nums;display:inline-block}
 .gc-v span{min-width:6.5ch}
+/* ===== de-glow: calm, editorial ===== */
+.pl4-grid li:before,.page-index .pl4-grid li:before,.hx-br:before,.gx:before,.gx:after,.hero:before,.p2-hero:before,.x27-glow,.x27-card:before,.h2-beam{display:none!important}
+.wf37{background:#0c0c10!important;box-shadow:0 1px 2px rgba(11,15,25,.2),0 16px 40px -24px rgba(11,15,25,.35)!important}
+.wf37-btn{box-shadow:none!important}
+.wf37-c.act{box-shadow:0 0 0 1px rgba(124,108,255,.25)!important}
+.wf37-copy .eb i{box-shadow:none!important}
+.p2-est{background:#0B0F19!important;border-color:rgba(255,255,255,.1)!important}
+.x27-end{background:none!important}
+.page-index .hero .button.lime,.xb-cta,.sl-cta,.sv2-btn,.sv2-btn:hover,.x27-btn,.x27-btn:hover,.page-index .hero .hc .hc-gold,.page-index .hero .hc .hc-gold:hover,.nav-wa,.nav-wa:hover,.gq-wa-btn:hover,.wf37-cta .p{box-shadow:0 1px 2px rgba(11,15,25,.14)!important}
+.x27-card:hover,.x27-dl:hover{box-shadow:0 1px 2px rgba(11,15,25,.06),0 8px 24px rgba(11,15,25,.08)!important}
+.page-index .hx-br{box-shadow:0 1px 2px rgba(0,0,0,.2),0 24px 48px -28px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06)!important}
+.gq33 .gq-tick{box-shadow:none!important}
+.m-res.on{box-shadow:0 0 0 1px rgba(201,169,110,.4)!important}
+.navigation nav .nav-dd-panel.mm,header.navigation nav .nav-dd-panel.mm{box-shadow:0 1px 2px rgba(11,15,25,.06),0 18px 40px -16px rgba(11,15,25,.18)!important}
+.xp-wrap:after{opacity:.35}
+.hero h1 em{animation:none!important}
+.mbar{box-shadow:none!important}
+.p2-care{background:#0B0F19!important}

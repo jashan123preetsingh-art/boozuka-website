@@ -1,5 +1,5 @@
 (()=>{const f=document.getElementById('gcalc');if(!f)return;const $=id=>document.getElementById(id);const ks=['enq','miss','conv','val'];const fmt=n=>Math.round(n).toLocaleString('en-IN');
-let cur={c:7,r:21600},raf;const anim=(c,r)=>{cancelAnimationFrame(raf);const s={...cur},t0=performance.now();const st=t=>{const k=Math.min(1,(t-t0)/450),e=1-Math.pow(1-k,3);cur={c:s.c+(c-s.c)*e,r:s.r+(r-s.r)*e};$('gc-cust').textContent=fmt(Math.floor(cur.c+1e-9));$('gc-rev').textContent=fmt(cur.r);if(k<1)raf=requestAnimationFrame(st)};raf=requestAnimationFrame(st)};
+let cur={c:7,r:21600},raf;const anim=(c,r)=>{cancelAnimationFrame(raf);const s={...cur},t0=performance.now();const st=t=>{const k=Math.min(1,(t-t0)/160),e=1-Math.pow(1-k,3);cur={c:s.c+(c-s.c)*e,r:s.r+(r-s.r)*e};$('gc-cust').textContent=fmt(Math.floor(cur.c+1e-9));$('gc-rev').textContent=fmt(cur.r);if(k<1)raf=requestAnimationFrame(st)};raf=requestAnimationFrame(st)};
 const paint=r=>r.style.setProperty('--p',((r.value-r.min)/(r.max-r.min)*100)+'%');
 const calc=()=>{const v={};ks.forEach(k=>{v[k]=Math.max(0,parseFloat($('gc-'+k).value)||0)});const m=Math.min(v.miss,100),c=Math.min(v.conv,100);const cu=v.enq*m/100*c/100,rev=cu*v.val;anim(Math.floor(cu+1e-9),rev);
 $('gc-math').textContent=fmt(v.enq)+' × '+m+'% × '+c+'% = '+(Math.round(cu*10)/10)+' customers × ₹'+fmt(v.val)};

@@ -972,3 +972,10 @@ body.page-pricing{padding-bottom:84px}
 /* v39: small sizes use the B. mark only */
 .brand picture.bz-logo{display:block;line-height:0}
 @media(max-width:480px){.navigation .brand picture.bz-logo img{width:30px!important;height:31px!important}}
+/* v40 brand kit page */
+.bk-boil{margin:12px 0;padding:18px 22px;border-left:3px solid var(--gold,#C9A96E);background:rgba(255,255,255,.5);border-radius:6px;font-size:17px;line-height:1.6}
+.bk-mark img{width:88px;height:auto;padding:22px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.bk-files{list-style:none;padding:0;margin:12px 0;display:grid;gap:8px}.bk-files li{display:flex;gap:14px;align-items:center;flex-wrap:wrap;border:1px solid var(--line);border-radius:10px;padding:12px 16px;background:rgba(255,255,255,.5)}.bk-files li span{flex:1;min-width:180px}.bk-files a{font-weight:600;font-size:14px}
+.bk-cols{list-style:none;padding:0;margin:12px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}.bk-cols li{border:1px solid var(--line);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:4px;background:rgba(255,255,255,.5)}.bk-cols i{display:block;height:56px;border-radius:6px;border:1px solid var(--line)}.bk-cols span{font-size:13px;color:var(--muted)}
+.pl4-n{color:#7A5F2E!important}
+.v40-spec{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.v40-spec a{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600;text-decoration:none;color:var(--ink);background:rgba(255,255,255,.5)}

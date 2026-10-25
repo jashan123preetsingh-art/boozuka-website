@@ -75,3 +75,10 @@ main>section:not(.hero):not(.pl4){content-visibility:auto;contain-intrinsic-size
 .page-index .hero .hc-tr{display:flex;flex-wrap:wrap;gap:8px}
 .page-index .hero .hc-tr span{display:inline-flex;align-items:center;gap:7px;padding:5px 12px;border-radius:99px;background:rgba(255,255,255,.04);border:1px solid rgba(217,199,163,.22);font-size:12.5px;color:#CFC6B5}
 .page-index .hero .hc-tr span:before{content:"";width:6px;height:6px;border-radius:50%;background:#B48F52;box-shadow:0 0 0 3px rgba(180,143,82,.16)}
+@media (min-width:1101px){.page-index .hero{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr)!important;column-gap:4%!important;padding-top:64px!important;padding-bottom:84px!important;align-items:center}
+}
+
+.page-index .hero h1.hk{font-size:clamp(42px,3.7vw,66px)!important;line-height:1.04!important;letter-spacing:-.025em!important;margin:18px 0 22px!important;max-width:none!important}
+.page-index .hero h1.hk .ln{display:block;white-space:nowrap}
+.page-index .hero .hk-sub{font-size:clamp(17px,1.25vw,20px);line-height:1.6;color:#C9CCD3!important;max-width:34em;margin:0 0 32px}
+@media (max-width:700px){.page-index .hero h1.hk{font-size:clamp(30px,8.6vw,46px)!important}.page-index .hero .hk-sub{font-size:16px}}

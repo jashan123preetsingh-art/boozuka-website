@@ -26,16 +26,16 @@
 Shops and showrooms; salons and spas; cafes and restaurants; clinics; gyms; service businesses; coaching and training institutes.
 
 ## Pricing
-Starting prices are listed at https://boozuka.com/pricing.html. Custom quotes after a free 20-minute audit.
+Starting prices are listed at https://boozuka.com/pricing. Custom quotes after a free 20-minute audit.
 
 ## Key pages
 - [Home](https://boozuka.com/)
-- [Services](https://boozuka.com/services.html)
-- [AI Services (AI automation, WhatsApp chatbots)](https://boozuka.com/ai-services.html)
-- [Local Growth (Google Maps and local SEO)](https://boozuka.com/local.html)
-- [Coaching institutes](https://boozuka.com/coaching.html)
-- [Pricing](https://boozuka.com/pricing.html)
-- [About](https://boozuka.com/about.html)
-- [Contact](https://boozuka.com/contact.html)
-- [Get a custom growth plan](https://boozuka.com/get-quote.html)
+- [Services](https://boozuka.com/services)
+- [AI Services (AI automation, WhatsApp chatbots)](https://boozuka.com/ai-services)
+- [Local Growth (Google Maps and local SEO)](https://boozuka.com/local)
+- [Coaching institutes](https://boozuka.com/coaching)
+- [Pricing](https://boozuka.com/pricing)
+- [About](https://boozuka.com/about)
+- [Contact](https://boozuka.com/contact)
+- [Get a custom growth plan](https://boozuka.com/get-quote)
 - [Blog](https://boozuka.com/blog/)

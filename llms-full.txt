@@ -26,18 +26,18 @@
 Shops and showrooms; salons and spas; cafes and restaurants; clinics; gyms; service businesses; coaching and training institutes.
 
 ## Pricing
-Starting prices are listed at https://boozuka.com/pricing.html. Custom quotes after a free 20-minute audit.
+Starting prices are listed at https://boozuka.com/pricing. Custom quotes after a free 20-minute audit.
 
 ## Key pages
 - [Home](https://boozuka.com/)
-- [Services](https://boozuka.com/services.html)
-- [AI Services (AI automation, WhatsApp chatbots)](https://boozuka.com/ai-services.html)
-- [Local Growth (Google Maps and local SEO)](https://boozuka.com/local.html)
-- [Coaching institutes](https://boozuka.com/coaching.html)
-- [Pricing](https://boozuka.com/pricing.html)
-- [About](https://boozuka.com/about.html)
-- [Contact](https://boozuka.com/contact.html)
-- [Get a custom growth plan](https://boozuka.com/get-quote.html)
+- [Services](https://boozuka.com/services)
+- [AI Services (AI automation, WhatsApp chatbots)](https://boozuka.com/ai-services)
+- [Local Growth (Google Maps and local SEO)](https://boozuka.com/local)
+- [Coaching institutes](https://boozuka.com/coaching)
+- [Pricing](https://boozuka.com/pricing)
+- [About](https://boozuka.com/about)
+- [Contact](https://boozuka.com/contact)
+- [Get a custom growth plan](https://boozuka.com/get-quote)
 - [Blog](https://boozuka.com/blog/)
 
 ## Page summaries
@@ -48,42 +48,42 @@ Headline: Websites that bring enquiries. Systems that follow them up.
 Summary: Boozuka is a digital marketing agency in Ludhiana: websites, Google SEO, ads and WhatsApp follow-up for local businesses in Punjab. Book a free Growth Audit.
 
 ### Services
-URL: https://boozuka.com/services.html
+URL: https://boozuka.com/services
 Headline: Websites, ads, SEO and WhatsApp automation, run by one in-house team
 Summary: Website development, SEO services, Meta and Google ads, CRM and video for businesses in Ludhiana and Punjab, built and run by one in-house team.
 
 ### AI Services (AI automation, WhatsApp chatbots)
-URL: https://boozuka.com/ai-services.html
+URL: https://boozuka.com/ai-services
 Headline: AI that answers, follows up and books, while you run your business.
 Summary: AI automation for Punjab businesses: WhatsApp chatbot, website chatbot, lead capture to CRM and follow-up reminders, set up and monitored in-house.
 
 ### Local Growth (Google Maps and local SEO)
-URL: https://boozuka.com/local.html
+URL: https://boozuka.com/local
 Headline: Grow your local business, online.
 Summary: Google Business Profile optimisation and local SEO in Ludhiana. Get found on Google Maps, earn more calls and walk-ins, and reply to every enquiry fast.
 
 ### Coaching institutes
-URL: https://boozuka.com/coaching.html
+URL: https://boozuka.com/coaching
 Headline: More admissions from the enquiries you already get
 Summary: Marketing for coaching and IELTS institutes in Punjab: admission-focused websites, lead ads, WhatsApp follow-up and an admissions CRM that converts.
 
 ### Pricing
-URL: https://boozuka.com/pricing.html
+URL: https://boozuka.com/pricing
 Headline: Clear starting prices. A fixed quote after a free audit.
 Summary: Clear starting prices for websites, Google SEO, WhatsApp CRM and growth plans in Ludhiana. Book a free consultation and get a fixed custom quote.
 
 ### About
-URL: https://boozuka.com/about.html
+URL: https://boozuka.com/about
 Headline: A Ludhiana team that builds websites, runs ads and follows up every enquiry
 Summary: Meet Boozuka, a Ludhiana-based in-house team for websites, ads, SEO and WhatsApp follow-up, led by founders Jashanpreet Singh and Megha Walia.
 
 ### Contact
-URL: https://boozuka.com/contact.html
+URL: https://boozuka.com/contact
 Headline: Tell us about your business
 Summary: Contact Boozuka in Ludhiana on WhatsApp, phone or email. Tell us about your business and book a free 20-minute Growth Audit with our in-house team.
 
 ### Get a custom growth plan
-URL: https://boozuka.com/get-quote.html
+URL: https://boozuka.com/get-quote
 Headline: Get your custom growth plan
 Summary: Tell us about your business in 2 minutes and get a custom growth plan from Boozuka, a Ludhiana in-house team for websites, SEO and ads. Free, no obligation.
 
@@ -110,11 +110,11 @@ AI automation (WhatsApp chatbots, website chatbots, lead capture to CRM and foll
 Any business that wants to grow online: shops and showrooms, salons and spas, cafes and restaurants, clinics, gyms, service businesses, and coaching or training institutes.
 
 **How do I get a quote from Boozuka?**
-Fill the 2-minute growth plan form at boozuka.com/get-quote.html or message +91 82890 94569 on WhatsApp. Starting prices are listed on the pricing page.
+Fill the 2-minute growth plan form at boozuka.com/get-quote or message +91 82890 94569 on WhatsApp. Starting prices are listed on the pricing page.
 
 ## Blog articles
-- [How Coaching Institutes in Punjab Can Get More Admissions](https://boozuka.com/blog/coaching-institutes-more-admissions-online.html)
-- [Google Maps Ranking Guide for Ludhiana Businesses (2026)](https://boozuka.com/blog/google-maps-ranking-guide-ludhiana.html)
-- [WhatsApp Automation & AI Chatbot Guide for Small Business](https://boozuka.com/blog/whatsapp-automation-guide-small-business.html)
+- [How Coaching Institutes in Punjab Can Get More Admissions](https://boozuka.com/blog/coaching-institutes-more-admissions-online)
+- [Google Maps Ranking Guide for Ludhiana Businesses (2026)](https://boozuka.com/blog/google-maps-ranking-guide-ludhiana)
+- [WhatsApp Automation & AI Chatbot Guide for Small Business](https://boozuka.com/blog/whatsapp-automation-guide-small-business)
 
 Note: Boozuka does not publish ratings or client statistics on its website. Sample projects at /samples/ are fictional designs.

@@ -14,8 +14,8 @@ document.addEventListener('keydown', event => {
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
 document.querySelectorAll('a[data-service]').forEach(link => {
-  if (link.getAttribute('href') === 'contact.html') {
-    link.setAttribute('href', 'contact.html?service=' + encodeURIComponent(link.dataset.service));
+  if (link.getAttribute('href') === '/contact' || link.getAttribute('href') === 'contact.html') {
+    link.setAttribute('href', '/contact?service=' + encodeURIComponent(link.dataset.service));
   }
 });
 const examples = {

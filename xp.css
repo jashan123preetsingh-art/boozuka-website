@@ -189,3 +189,15 @@ main>section:not(.hero):not(.pl4){content-visibility:auto;contain-intrinsic-size
 .team7 .tm-card .tm-role{margin:0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A35;padding-bottom:12px;border-bottom:1px solid rgba(11,15,25,.1)}
 .team7 .tm-card h3{margin:6px 0 0;font-size:26px;line-height:1.15}
 .team7 .tm-card .tm-t{margin:0;max-width:44ch;color:#4B5160;font-size:15px;line-height:1.55}
+.faq-section .more-wrap{grid-column:1/-1;margin-top:48px;border-top:1px solid rgba(11,15,25,.12);padding-top:28px}
+.faq-section .more-h{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8A6A35;margin:0 0 8px}
+.faq-section .more-b{max-height:420px;overflow:auto;padding:0 0 18px;font-size:15px;color:#4B5160;columns:2 300px;column-gap:40px}
+.faq-section .more-b p{margin:0 0 8px;break-inside:avoid}.faq-section .more-l{column-span:all;margin-top:10px!important}.faq-section .more-l a{color:#8A6A35}
+.faq-section .more-wrap{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+.faq-section .more-h{grid-column:1/-1}
+.faq-section .more-d{border-bottom:1px solid rgba(11,15,25,.1)}
+.faq-section .more-d summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:16px 0;font:500 19px 'Cormorant Garamond',serif;color:#0B0F19}
+.faq-section .more-d summary::-webkit-details-marker{display:none}
+.faq-section .more-d summary span{color:#8A6A35}
+.faq-section .more-d[open]{grid-column:1/-1}
+@media(max-width:760px){.faq-section .more-wrap{grid-template-columns:1fr}}

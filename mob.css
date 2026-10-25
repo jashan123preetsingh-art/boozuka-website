@@ -72,8 +72,10 @@ body.has-mbar footer{padding-bottom:16px}
 @media(max-width:1100px){.navigation .mm-it{flex-direction:row!important;align-items:flex-start!important;gap:12px}.navigation .mm-it .mm-tx{display:flex;flex-direction:column;gap:3px}.navigation .mm-it .mm-tx small{display:block!important;font-size:14px!important;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.navigation .mm-it .mm-tx b{font-size:16px!important}}
 /* anti-wobble */
 html,body{overflow-x:clip}
-#cal-inline,.cal-inline-wrap{min-height:820px}
-@media(min-width:769px){#cal-inline,.cal-inline-wrap{min-height:700px}}
+#cal-inline,.cal-inline-wrap{height:820px;min-height:820px;overflow:hidden}
+#cal-inline{overflow-y:auto;overscroll-behavior:contain}
+#cal-inline iframe,#cal-inline .cal-embed{height:820px!important;min-height:820px!important}
+@media(min-width:769px){#cal-inline,.cal-inline-wrap{height:720px;min-height:720px}#cal-inline iframe,#cal-inline .cal-embed{height:720px!important;min-height:720px!important}}
 .v42-grid,.hero .hx-st{scroll-snap-type:x proximity!important;overscroll-behavior-x:contain;touch-action:pan-x pan-y}
 .gc-n span,.gc-v span{font-variant-numeric:tabular-nums lining-nums;display:inline-block;min-width:2ch}
 .gc-v span{min-width:6.5ch}

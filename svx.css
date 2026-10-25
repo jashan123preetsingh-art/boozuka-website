@@ -245,3 +245,4 @@
 .xv-hand .xt{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.xv-hand .xt span{display:flex;gap:8px;align-items:center;border:1px solid #ECECEF;border-radius:10px;padding:9px 10px;font-weight:600}
 .xv-hand .xt i{font-style:normal}
 @media(max-width:960px){.xv{max-width:none}}
+.sl-managed{margin:6px 0 22px;font-size:15px;color:#C9A96E}.sl-managed a{color:#F7F4EE;text-decoration:underline;text-underline-offset:3px;margin-left:6px}

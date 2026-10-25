@@ -83,3 +83,14 @@
 .xm3{grid-template-columns:1fr 1fr;grid-template-rows:1.15fr 1fr;aspect-ratio:1/1}
 .xm3 img:first-child{grid-row:auto;grid-column:span 2}
 @media(max-width:760px){.faq-more{margin-top:14px}.pv5-steps p{display:none}}
+.pv5-mg{display:inline-block;margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8A6A2E;background:rgba(201,169,110,.16);border-radius:99px;padding:5px 10px}
+.pv5-pop .pv5-mg{color:#E3CFA4;background:rgba(201,169,110,.18)}
+.pz-care{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
+.pz-care h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,4vw,50px);margin:8px 0 12px;color:#0B0F19}.pz-care h2 em{color:#9A7A3E}
+.pz-care-h p{color:#4B5160}
+.pz-care-l{list-style:none;margin:0;padding:0;background:#0B0F19;border-radius:20px;padding:8px 22px}
+.pz-care-l li{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.08)}.pz-care-l li:last-child{border:0}
+.pz-care-l b{display:block;color:#F7F4EE;font-size:16px}.pz-care-l span{font-size:13.5px;color:#A9AEB8}.pz-care-l em{font-style:normal;color:#C9A96E;font-weight:700;font-size:14px;text-align:right;white-space:nowrap}
+.pz-care-n{grid-column:2;margin:0;font-size:13px;color:#7A7F8A}
+@media(max-width:760px){.pz-care{grid-template-columns:1fr;gap:18px}.pz-care-n{grid-column:1}.pz-care-l span{display:none}.pz-care-l em{white-space:normal;max-width:45%}}
+.pv5-mg{width:fit-content}
